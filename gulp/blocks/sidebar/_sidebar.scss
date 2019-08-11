@@ -1,0 +1,17 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  &__switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 70px;
+    font-size: 23px;
+    background-color: $color-main;
+    cursor: pointer;
+  }
+
+}

@@ -1,0 +1,47 @@
+.radio {
+
+  &__item {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    font-size: $font-size;
+    color: $grey6;
+    line-height: 1.5;
+    user-select: none;
+  }
+
+  &__item-hidden {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &__item-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: solid 1px $grey4;
+    border-radius: 50%;
+  }
+
+  &__item-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $color-main;
+  }
+
+  &__item-hidden:checked ~ .radio__item-mark:after {
+    display: block;
+  }
+
+}

@@ -1,0 +1,27 @@
+/* libs */
+@import "libs/icomoon";
+
+/* common */
+@import "variables";
+@import "fonts";
+@import "base";
+
+/* blocks */
+@import "blocks/button/button";
+@import "blocks/text-field/text-field";
+@import "blocks/checkbox/checkbox";
+@import "blocks/radio/radio";
+@import "blocks/dropdown/dropdown";
+@import "blocks/header/header";
+@import "blocks/sidebar/sidebar";
+
+/* для красоты */
+
+body {
+  padding: 15px;
+}
+
+article {
+  max-width: 450px;
+  padding: 20px;
+}

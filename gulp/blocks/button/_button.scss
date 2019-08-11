@@ -1,0 +1,37 @@
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: $font-family;
+  background-color: $color-main;
+  font-size: $font-size;
+  font-weight: 700;
+  border-radius: $border-radius;
+  color: $color-white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s all;
+
+  &:hover {
+    background-color: $color-main--dark;
+  }
+
+  &--secondary {
+    background-color: $grey1;
+    color: $grey2;
+  }
+
+  &--secondary:hover {
+    background-color: $color-main;
+    color: $color-white;
+  }
+
+  &--disable, &--disable:hover {
+    background-color: transparent;
+    border: 1px solid $grey0;
+    color: $grey3;
+    cursor: default;
+  }
+
+}
