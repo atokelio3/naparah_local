@@ -11,10 +11,14 @@ $grey3:                       #709594;
 $grey4:                       #cedfde;
 $grey5:                       #92b3b2;
 $grey6:                       #3d5b5a;
-
+$grey7:                       #203131;
+$grey8:                       #eef3f3;
+$grey9:                       #284040;
+$grey10:                      #abdae0;
 
 $color-white:                 #fff;
 $color-black:                 #000;
+$color-black--translucent:    rgba(35, 35, 38, 0.9);
 
 //$text-color:                  $gray-darkest;
 //$text-color--muted:           $gray;
@@ -35,3 +39,4 @@ $screen-sm:                   576px;
 $screen-md:                   768px;
 $screen-lg:                   992px;
 $screen-xl:                   1200px;
+$screen-xxl:                  1400px;

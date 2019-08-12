@@ -1,17 +1,57 @@
 .sidebar {
   position: fixed;
-  top: 0;
+  top: 70px;
   left: 0;
+  width: 100%;
+  height: calc(100% - 70px);
+  overflow-y: scroll;
+  padding-bottom: 70px;
+  background-color: $color-black--translucent;
 
-  &__switcher {
+  @media (min-width: $screen-lg) {
+    background-color: unset;
+    padding-bottom: 0;
+  }
+
+  &__mobile-nav {
+    width: 260px;
+    padding: 30px 0 70px;
+    background-color: $color-white;
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+
+  }
+
+  &__mobile-nav-item {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 55px;
-    height: 70px;
-    font-size: 23px;
-    background-color: $color-main;
-    cursor: pointer;
+    padding: 20px 30px;
+    text-decoration: none;
+  }
+
+  &__mobile-nav-icon {
+    margin-right: 25px;
+    font-size: 17px;
+    color: $color-main;
+  }
+
+  &__mobile-nav-text {
+    font-size: $font-size;
+    color: $grey9;
+  }
+
+  &__mobile-nav-divider {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+  }
+
+  &__mobile-nav-divider-dash {
+    width: 10px;
+    height: 1px;
+    background-color: $grey10;
   }
 
 }
