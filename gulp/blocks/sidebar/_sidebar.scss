@@ -4,11 +4,12 @@
   left: 0;
   width: 100%;
   height: calc(100% - 70px);
-  overflow-y: scroll;
+  overflow-y: auto;
   padding-bottom: 70px;
   background-color: $color-black--translucent;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-md) {
+    width: unset;
     background-color: unset;
     padding-bottom: 0;
   }
@@ -18,10 +19,9 @@
     padding: 30px 0 70px;
     background-color: $color-white;
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-md) {
       display: none;
     }
-
   }
 
   &__mobile-nav-item {
@@ -52,6 +52,67 @@
     width: 10px;
     height: 1px;
     background-color: $grey10;
+  }
+
+  &__desktop-nav {
+    display: none;
+    width: 70px;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 35px;
+    background-color: $grey9;
+    transition: width 0.3s;
+
+    @media (min-width: $screen-md) {
+      display: block;
+    }
+
+  }
+
+  &__desktop-nav--open {
+    width: 245px;
+  }
+
+  &__desktop-nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 26px;
+    text-decoration: none;
+    margin-bottom: 14px;
+  }
+
+  &__desktop-nav-item:hover {
+    background-color: $grey7;
+
+    .sidebar__desktop-nav-icon {
+      opacity: 1;
+    }
+
+  }
+
+  &__desktop-nav-item--active {
+    background-color: $grey7;
+
+    .sidebar__desktop-nav-icon {
+      opacity: 1;
+    }
+
+  }
+
+  &__desktop-nav-item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__desktop-nav-icon {
+    font-size: 18px;
+    margin-right: 27px;
+    opacity: 0.45;
+  }
+
+  &__desktop-nav-text {
+    font-size: $font-size;
+    color: $color-white;
+    white-space: nowrap;
   }
 
 }

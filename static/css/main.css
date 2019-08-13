@@ -408,7 +408,7 @@ body {
     font-size: 23px;
     background-color: #a7c205;
     cursor: pointer; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       .header__sidebar-switcher {
         width: 70px; } }
 
@@ -418,18 +418,19 @@ body {
   left: 0;
   width: 100%;
   height: calc(100% - 70px);
-  overflow-y: scroll;
+  overflow-y: auto;
   padding-bottom: 70px;
   background-color: rgba(35, 35, 38, 0.9); }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .sidebar {
+      width: unset;
       background-color: unset;
       padding-bottom: 0; } }
   .sidebar__mobile-nav {
     width: 260px;
     padding: 30px 0 70px;
     background-color: #fff; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       .sidebar__mobile-nav {
         display: none; } }
   .sidebar__mobile-nav-item {
@@ -452,6 +453,43 @@ body {
     width: 10px;
     height: 1px;
     background-color: #abdae0; }
+  .sidebar__desktop-nav {
+    display: none;
+    width: 70px;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 35px;
+    background-color: #284040;
+    transition: width 0.3s; }
+    @media (min-width: 768px) {
+      .sidebar__desktop-nav {
+        display: block; } }
+  .sidebar__desktop-nav--open {
+    width: 245px; }
+  .sidebar__desktop-nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 26px;
+    text-decoration: none;
+    margin-bottom: 14px; }
+  .sidebar__desktop-nav-item:hover {
+    background-color: #203131; }
+    .sidebar__desktop-nav-item:hover .sidebar__desktop-nav-icon {
+      opacity: 1; }
+  .sidebar__desktop-nav-item--active {
+    background-color: #203131; }
+    .sidebar__desktop-nav-item--active .sidebar__desktop-nav-icon {
+      opacity: 1; }
+  .sidebar__desktop-nav-item:last-child {
+    margin-bottom: 0; }
+  .sidebar__desktop-nav-icon {
+    font-size: 18px;
+    margin-right: 27px;
+    opacity: 0.45; }
+  .sidebar__desktop-nav-text {
+    font-size: 14px;
+    color: #fff;
+    white-space: nowrap; }
 
 /* для красоты */
 body {
