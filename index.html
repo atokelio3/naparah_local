@@ -10,7 +10,6 @@
 
 <div class="wrapper">
 
-
   <div class="header">
     <div class="header__sidebar-switcher">
       <span class="icon-menu"></span>
@@ -57,48 +56,70 @@
         <span class="sidebar__mobile-nav-text">Контакты</span>
       </a>
     </nav>
-    <nav class="sidebar__desktop-nav">
-      <a href="/" class="sidebar__desktop-nav-item">
-        <span class="sidebar__desktop-nav-icon"><span class="icon-roast"></span></span>
-        <span class="sidebar__desktop-nav-text">Горячие блюда</span>
-      </a>
-      <a href="/" class="sidebar__desktop-nav-item">
-        <span class="sidebar__desktop-nav-icon"><span class="icon-salads"></span></span>
-        <span class="sidebar__desktop-nav-text">Салаты</span>
-      </a>
-      <a href="/" class="sidebar__desktop-nav-item sidebar__desktop-nav-item--active">
-        <span class="sidebar__desktop-nav-icon"><span class="icon-soups"></span></span>
-        <span class="sidebar__desktop-nav-text">Супы</span>
-      </a>
-      <a href="/" class="sidebar__desktop-nav-item">
-        <span class="sidebar__desktop-nav-icon"><span class="icon-burgers"></span></span>
-        <span class="sidebar__desktop-nav-text">Бургеры</span>
-      </a>
-      <a href="/" class="sidebar__desktop-nav-item">
-        <span class="sidebar__desktop-nav-icon"><span class="icon-snacks"></span></span>
-        <span class="sidebar__desktop-nav-text">Закуски и хлеб</span>
-      </a>
-      <a href="/" class="sidebar__desktop-nav-item">
-        <span class="sidebar__desktop-nav-icon"><span class="icon-dessert"></span></span>
-        <span class="sidebar__desktop-nav-text">Десерты</span>
-      </a>
-      <a href="/" class="sidebar__desktop-nav-item">
-        <span class="sidebar__desktop-nav-icon"><span class="icon-garnish"></span></span>
-        <span class="sidebar__desktop-nav-text">Гарниры и соусы</span>
-      </a>
-      <a href="/" class="sidebar__desktop-nav-item">
-        <span class="sidebar__desktop-nav-icon"><span class="icon-star"></span></span>
-        <span class="sidebar__mobile-nav-text">Блюда за баллы</span>
-      </a>
-    </nav>
+    <div class="sidebar__desktop-nav-wrap">
+      <nav class="sidebar__desktop-nav">
+        <a href="/" class="sidebar__desktop-nav-item">
+          <span class="sidebar__desktop-nav-icon"><span class="icon-roast"></span></span>
+          <span class="sidebar__desktop-nav-text">Горячие блюда</span>
+        </a>
+        <a href="/" class="sidebar__desktop-nav-item">
+          <span class="sidebar__desktop-nav-icon"><span class="icon-salads"></span></span>
+          <span class="sidebar__desktop-nav-text">Салаты</span>
+        </a>
+        <a href="/" class="sidebar__desktop-nav-item sidebar__desktop-nav-item--active">
+          <span class="sidebar__desktop-nav-icon"><span class="icon-soups"></span></span>
+          <span class="sidebar__desktop-nav-text">Супы</span>
+        </a>
+        <a href="/" class="sidebar__desktop-nav-item">
+          <span class="sidebar__desktop-nav-icon"><span class="icon-burgers"></span></span>
+          <span class="sidebar__desktop-nav-text">Бургеры</span>
+        </a>
+        <a href="/" class="sidebar__desktop-nav-item">
+          <span class="sidebar__desktop-nav-icon"><span class="icon-snacks"></span></span>
+          <span class="sidebar__desktop-nav-text">Закуски и хлеб</span>
+        </a>
+        <a href="/" class="sidebar__desktop-nav-item">
+          <span class="sidebar__desktop-nav-icon"><span class="icon-dessert"></span></span>
+          <span class="sidebar__desktop-nav-text">Десерты</span>
+        </a>
+        <a href="/" class="sidebar__desktop-nav-item">
+          <span class="sidebar__desktop-nav-icon"><span class="icon-garnish"></span></span>
+          <span class="sidebar__desktop-nav-text">Гарниры и соусы</span>
+        </a>
+        <a href="/" class="sidebar__desktop-nav-item">
+          <span class="sidebar__desktop-nav-icon"><span class="icon-star"></span></span>
+          <span class="sidebar__desktop-nav-text">Блюда за баллы</span>
+        </a>
+        <div class="sidebar__desktop-nav-divider">
+          <span class="sidebar__desktop-nav-divider-dash"></span><span
+            class="sidebar__desktop-nav-divider-dash"></span><span
+            class="sidebar__desktop-nav-divider-dash"></span><span
+            class="sidebar__desktop-nav-divider-dash"></span><span
+            class="sidebar__desktop-nav-divider-dash"></span><span
+            class="sidebar__desktop-nav-divider-dash"></span><span
+            class="sidebar__desktop-nav-divider-dash"></span><span
+            class="sidebar__desktop-nav-divider-dash"></span><span
+            class="sidebar__desktop-nav-divider-dash"></span><span
+            class="sidebar__desktop-nav-divider-dash"></span><span
+            class="sidebar__desktop-nav-divider-dash"></span>
+        </div>
+        <a href="/" class="sidebar__desktop-nav-item">
+          <span class="sidebar__desktop-nav-icon"><span class="icon-delivery"></span></span>
+          <span class="sidebar__desktop-nav-text">Условия доставки</span>
+        </a>
+        <a href="/" class="sidebar__desktop-nav-item">
+          <span class="sidebar__desktop-nav-icon"><span class="icon-contact_us"></span></span>
+          <span class="sidebar__desktop-nav-text">Контакты</span>
+        </a>
+      </nav>
+    </div>
   </div>
-</div>
 
 <script>
   var switcher = document.querySelector('.header__sidebar-switcher');
   switcher.onclick = function () {
     switcher.classList.toggle('header__sidebar-switcher--open');
-    document.querySelector('.sidebar__desktop-nav').classList.toggle('sidebar__desktop-nav--open');
+    document.querySelector('.sidebar__desktop-nav-wrap').classList.toggle('sidebar__desktop-nav-wrap--open');
   };
 </script>
 
