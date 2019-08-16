@@ -9,17 +9,27 @@
   background-color: $color-white;
 
   &__sidebar-switcher {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 55px;
-    height: 100%;
+    height: 70px;
     font-size: 23px;
     background-color: $color-main;
     cursor: pointer;
 
+    &-opening-icon {
+      width: 23px;
+      height: 23px;
+    }
+
     &-closing-icon {
       display: none;
+      width: 23px;
+      height: 23px;
     }
 
     @media (min-width: $screen-md) {

@@ -1,0 +1,28 @@
+.center-wrapper {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $screen-sm) {
+    max-width: 540px;
+  }
+
+  @media (min-width: $screen-md) {
+    max-width: 710px;
+  }
+
+  @media (min-width: $screen-lg) {
+    max-width: 950px;
+  }
+
+  @media (min-width: $screen-xl) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: $screen-xxl) {
+    max-width: 1215px;
+  }
+
+}

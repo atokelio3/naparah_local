@@ -8,6 +8,7 @@
   overflow-y: auto;
   padding-bottom: 70px;
   background-color: $color-black--translucent;
+  z-index: 10;
 
   &--active {
     display: block;
@@ -61,7 +62,7 @@
     background-color: $grey10;
   }
 
-  &__desktop-nav-wrap {
+  &__desktop-nav-wrapper {
     display: none;
     width: 70px;
     height: 100%;
@@ -86,7 +87,7 @@
 
   &--active {
 
-    .sidebar__desktop-nav-wrap {
+    .sidebar__desktop-nav-wrapper {
       width: 245px;
     }
 
