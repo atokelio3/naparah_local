@@ -12,8 +12,12 @@
 
   <div class="header">
     <div class="header__sidebar-switcher">
-      <span class="icon-menu"></span>
-<!--      <span class="icon-close-round"></span>-->
+      <div class="header__sidebar-switcher-opening-icon">
+        <span class="icon-menu"></span>
+      </div>
+      <div class="header__sidebar-switcher-closing-icon">
+        <span class="icon-close-round"></span>
+      </div>
     </div>
   </div>
 
@@ -115,11 +119,13 @@
     </div>
   </div>
 
-<script>
+</div>
+
+  <script>
   var switcher = document.querySelector('.header__sidebar-switcher');
   switcher.onclick = function () {
-    switcher.classList.toggle('header__sidebar-switcher--open');
-    document.querySelector('.sidebar__desktop-nav-wrap').classList.toggle('sidebar__desktop-nav-wrap--open');
+    switcher.classList.toggle('header__sidebar-switcher--active');
+    document.querySelector('.sidebar').classList.toggle('sidebar--active');
   };
 </script>
 

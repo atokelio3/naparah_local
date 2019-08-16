@@ -1,4 +1,5 @@
 .sidebar {
+  display: none;
   position: fixed;
   top: 70px;
   left: 0;
@@ -8,7 +9,12 @@
   padding-bottom: 70px;
   background-color: $color-black--translucent;
 
+  &--active {
+    display: block;
+  }
+
   @media (min-width: $screen-md) {
+    display: block;
     width: unset;
     background-color: unset;
     padding-bottom: 0;
@@ -68,15 +74,6 @@
 
   }
 
-  &__desktop-nav-wrap--open {
-    width: 245px;
-
-    .sidebar__desktop-nav {
-      width: 262px;
-    }
-
-  }
-
   &__desktop-nav {
     width: 87px;
     height: 100%;
@@ -85,6 +82,17 @@
     padding: 35px 0 75px;
     background-color: $grey9;
     transition: width 0.3s;
+  }
+
+  &--active {
+
+    .sidebar__desktop-nav-wrap {
+      width: 245px;
+    }
+
+    .sidebar__desktop-nav {
+      width: 262px;
+    }
 
   }
 

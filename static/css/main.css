@@ -408,11 +408,18 @@ body {
     font-size: 23px;
     background-color: #a7c205;
     cursor: pointer; }
+    .header__sidebar-switcher-closing-icon {
+      display: none; }
     @media (min-width: 768px) {
       .header__sidebar-switcher {
         width: 70px; } }
+  .header__sidebar-switcher--active .header__sidebar-switcher-opening-icon {
+    display: none; }
+  .header__sidebar-switcher--active .header__sidebar-switcher-closing-icon {
+    display: block; }
 
 .sidebar {
+  display: none;
   position: fixed;
   top: 70px;
   left: 0;
@@ -421,8 +428,11 @@ body {
   overflow-y: auto;
   padding-bottom: 70px;
   background-color: rgba(35, 35, 38, 0.9); }
+  .sidebar--active {
+    display: block; }
   @media (min-width: 768px) {
     .sidebar {
+      display: block;
       width: unset;
       background-color: unset;
       padding-bottom: 0; } }
@@ -462,10 +472,6 @@ body {
     @media (min-width: 768px) {
       .sidebar__desktop-nav-wrap {
         display: block; } }
-  .sidebar__desktop-nav-wrap--open {
-    width: 245px; }
-    .sidebar__desktop-nav-wrap--open .sidebar__desktop-nav {
-      width: 262px; }
   .sidebar__desktop-nav {
     width: 87px;
     height: 100%;
@@ -474,6 +480,10 @@ body {
     padding: 35px 0 75px;
     background-color: #284040;
     transition: width 0.3s; }
+  .sidebar--active .sidebar__desktop-nav-wrap {
+    width: 245px; }
+  .sidebar--active .sidebar__desktop-nav {
+    width: 262px; }
   .sidebar__desktop-nav-item {
     display: flex;
     align-items: center;

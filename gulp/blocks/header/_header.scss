@@ -18,8 +18,24 @@
     background-color: $color-main;
     cursor: pointer;
 
+    &-closing-icon {
+      display: none;
+    }
+
     @media (min-width: $screen-md) {
       width: 70px;
+    }
+
+  }
+
+  &__sidebar-switcher--active {
+
+    .header__sidebar-switcher-opening-icon {
+      display: none;
+    }
+
+    .header__sidebar-switcher-closing-icon {
+      display: block;
     }
 
   }
