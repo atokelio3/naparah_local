@@ -10,7 +10,7 @@
 
 <div class="general-wrapper">
   <div class="general-wrapper__content">
-    <div class="header">
+    <header class="header">
       <div class="header__sidebar-switcher">
         <div class="header__sidebar-switcher-opening-icon">
           <span class="icon-menu"></span>
@@ -19,27 +19,50 @@
           <span class="icon-close-round"></span>
         </div>
       </div>
-      <div class="center-wrapper">this is header!</div>
-    </div>
+      <div class="center-wrapper header__center-wrapper">
+        <a href="#" class="header__logo">
+          <img src="static/img/logo_head.svg" class="responsive-img" alt="Logo">
+        </a>
+        <div class="header__search">
+          <form class="search-form">
+            <label class="search-form__label">
+              <span class="search-form__icon">
+                <span class="icon-search"></span>
+              </span>
+              <input type="text" class="search-form__input">
+            </label>
+            <button type="button" class="search-form__close-button">
+              <span class="icon-close"></span>
+            </button>
+          </form>
+        </div>
+        <button class="header__search-button">
+          <span class="icon-search"></span>
+        </button>
+        <a href="#" class="header__cart">
+          <span class="icon-cart"></span>
+        </a>
+      </div>
+    </header>
     <div class="sidebar">
       <nav class="sidebar__mobile-nav">
-        <a href="/" class="sidebar__mobile-nav-item">
+        <a href="#" class="sidebar__mobile-nav-item">
           <span class="sidebar__mobile-nav-icon"><span class="icon-cart"></span></span>
           <span class="sidebar__mobile-nav-text">Меню</span>
         </a>
-        <a href="/" class="sidebar__mobile-nav-item">
+        <a href="#" class="sidebar__mobile-nav-item">
           <span class="sidebar__mobile-nav-icon"><span class="icon-cart"></span></span>
           <span class="sidebar__mobile-nav-text">Корзина</span>
         </a>
-        <a href="/" class="sidebar__mobile-nav-item">
+        <a href="#" class="sidebar__mobile-nav-item">
           <span class="sidebar__mobile-nav-icon"><span class="icon-cart"></span></span>
           <span class="sidebar__mobile-nav-text">Заказы</span>
         </a>
-        <a href="/" class="sidebar__mobile-nav-item">
+        <a href="#" class="sidebar__mobile-nav-item">
           <span class="sidebar__mobile-nav-icon"><span class="icon-cart"></span></span>
           <span class="sidebar__mobile-nav-text">Профиль</span>
         </a>
-        <a href="/" class="sidebar__mobile-nav-item">
+        <a href="#" class="sidebar__mobile-nav-item">
           <span class="sidebar__mobile-nav-icon"><span class="icon-cart"></span></span>
           <span class="sidebar__mobile-nav-text">Выход</span>
         </a>
@@ -51,46 +74,46 @@
             class="sidebar__mobile-nav-divider-dash"></span><span class="sidebar__mobile-nav-divider-dash"></span><span
             class="sidebar__mobile-nav-divider-dash"></span>
         </div>
-        <a href="/" class="sidebar__mobile-nav-item">
+        <a href="#" class="sidebar__mobile-nav-item">
           <span class="sidebar__mobile-nav-icon"><span class="icon-cart"></span></span>
           <span class="sidebar__mobile-nav-text">Условия доставки</span>
         </a>
-        <a href="/" class="sidebar__mobile-nav-item">
+        <a href="#" class="sidebar__mobile-nav-item">
           <span class="sidebar__mobile-nav-icon"><span class="icon-star"></span></span>
           <span class="sidebar__mobile-nav-text">Контакты</span>
         </a>
       </nav>
       <div class="sidebar__desktop-nav-wrapper">
         <nav class="sidebar__desktop-nav">
-          <a href="/" class="sidebar__desktop-nav-item">
+          <a href="#" class="sidebar__desktop-nav-item">
             <span class="sidebar__desktop-nav-icon"><span class="icon-roast"></span></span>
             <span class="sidebar__desktop-nav-text">Горячие блюда</span>
           </a>
-          <a href="/" class="sidebar__desktop-nav-item">
+          <a href="#" class="sidebar__desktop-nav-item">
             <span class="sidebar__desktop-nav-icon"><span class="icon-salads"></span></span>
             <span class="sidebar__desktop-nav-text">Салаты</span>
           </a>
-          <a href="/" class="sidebar__desktop-nav-item sidebar__desktop-nav-item--active">
+          <a href="#" class="sidebar__desktop-nav-item sidebar__desktop-nav-item--active">
             <span class="sidebar__desktop-nav-icon"><span class="icon-soups"></span></span>
             <span class="sidebar__desktop-nav-text">Супы</span>
           </a>
-          <a href="/" class="sidebar__desktop-nav-item">
+          <a href="#" class="sidebar__desktop-nav-item">
             <span class="sidebar__desktop-nav-icon"><span class="icon-burgers"></span></span>
             <span class="sidebar__desktop-nav-text">Бургеры</span>
           </a>
-          <a href="/" class="sidebar__desktop-nav-item">
+          <a href="#" class="sidebar__desktop-nav-item">
             <span class="sidebar__desktop-nav-icon"><span class="icon-snacks"></span></span>
             <span class="sidebar__desktop-nav-text">Закуски и хлеб</span>
           </a>
-          <a href="/" class="sidebar__desktop-nav-item">
+          <a href="#" class="sidebar__desktop-nav-item">
             <span class="sidebar__desktop-nav-icon"><span class="icon-dessert"></span></span>
             <span class="sidebar__desktop-nav-text">Десерты</span>
           </a>
-          <a href="/" class="sidebar__desktop-nav-item">
+          <a href="#" class="sidebar__desktop-nav-item">
             <span class="sidebar__desktop-nav-icon"><span class="icon-garnish"></span></span>
             <span class="sidebar__desktop-nav-text">Гарниры и соусы</span>
           </a>
-          <a href="/" class="sidebar__desktop-nav-item">
+          <a href="#" class="sidebar__desktop-nav-item">
             <span class="sidebar__desktop-nav-icon"><span class="icon-star"></span></span>
             <span class="sidebar__desktop-nav-text">Блюда за баллы</span>
           </a>
@@ -107,29 +130,59 @@
               class="sidebar__desktop-nav-divider-dash"></span><span
               class="sidebar__desktop-nav-divider-dash"></span>
           </div>
-          <a href="/" class="sidebar__desktop-nav-item">
+          <a href="#" class="sidebar__desktop-nav-item">
             <span class="sidebar__desktop-nav-icon"><span class="icon-delivery"></span></span>
             <span class="sidebar__desktop-nav-text">Условия доставки</span>
           </a>
-          <a href="/" class="sidebar__desktop-nav-item">
+          <a href="#" class="sidebar__desktop-nav-item">
             <span class="sidebar__desktop-nav-icon"><span class="icon-contact_us"></span></span>
             <span class="sidebar__desktop-nav-text">Контакты</span>
           </a>
         </nav>
       </div>
     </div>
+    <div class="test center-wrapper">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis consectetur cum
+      dolor ea earum excepturi fugiat magnam, maiores odio pariatur, possimus quis similique! Ad commodi consequuntur
+      culpa debitis dolorem, ducimus eaque enim esse excepturi facilis hic ipsum, iste iusto minus molestiae nam nulla
+      obcaecati odio officia omnis, placeat qui quos rem suscipit totam veniam voluptates voluptatum? A ab accusamus
+      alias amet animi at autem beatae distinctio eius error eum ex facere fuga in inventore laborum maxime minus natus
+      neque, obcaecati officia, porro quaerat quam quas quidem reprehenderit sapiente sint soluta veniam voluptatum!
+      Animi aperiam assumenda aut corporis cumque dicta, eaque esse fuga in incidunt inventore iste labore minus
+      mollitia obcaecati optio perferendis placeat quisquam repudiandae sit tempora temporibus ullam voluptatem.
+      Accusantium deserunt id iure maiores, minima nam nemo perferendis quas quod! Accusantium, amet blanditiis. Ab
+      beatae blanditiis consequuntur ea eum illum incidunt iure magni maxime nisi non odio quisquam quo quod,
+      reiciendis, rem tempora voluptate voluptatibus? Ab aliquid aperiam architecto commodi culpa cumque dolorem dolorum
+      eos error facilis fugiat impedit magni mollitia natus non nostrum odit optio perspiciatis porro provident, quae
+      quo repellendus unde vel voluptate! Ad aliquam, atque dignissimos, distinctio et inventore perspiciatis quaerat,
+      quasi quis repellendus repudiandae?
+    </div>
   </div>
-  <footer class="general-wrapper__footer">
-    <div class="center-wrapper">this is footer!</div>
+  <footer class="general-wrapper__footer footer">
+    <div class="center-wrapper">
+      footer txt
+    </div>
   </footer>
 </div>
 
-  <script>
+<script>
+
+  /* showSideBar */
+
   var switcher = document.querySelector('.header__sidebar-switcher');
   switcher.onclick = function () {
     switcher.classList.toggle('header__sidebar-switcher--active');
     document.querySelector('.sidebar').classList.toggle('sidebar--active');
   };
+
+  /* toggleHeaderSearch */
+
+  document.querySelector('.header__search-button').onclick = function () {
+    document.querySelector('.header__search').classList.add('header__search--active');
+  };
+  document.querySelector('.search-form__close-button').onclick = function () {
+    document.querySelector('.header__search').classList.remove('header__search--active');
+  };
+
 </script>
 
 </body>

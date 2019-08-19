@@ -1,0 +1,48 @@
+.search-form {
+  position: relative;
+
+  &__input {
+    display: block;
+    height: 35px;
+    width: 100%;
+    padding: 0 40px;
+    border: none;
+    border-radius: $border-radius;
+    background-color: $grey8;
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $grey6;
+  }
+
+  &__icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 35px;
+    left: 0;
+    font-size: 18px;
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 35px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 11px;
+
+    span:before {
+      color: $grey11;
+    }
+
+  }
+
+}
