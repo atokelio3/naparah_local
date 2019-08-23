@@ -1,0 +1,20 @@
+.ul {
+  margin: 0;
+  padding: 8px 0;
+  list-style: none;
+  background-color: $color-white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+  &__link {
+    display: block;
+    padding: 7px 15px;
+    font-size: 13px;
+    color: $grey5;
+    transition: background-color 0.3s;
+  }
+
+  &__link:hover {
+    background-color: $grey12;
+  }
+
+}

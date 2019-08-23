@@ -56,26 +56,17 @@
             <span class="header__user-name">Сергей</span>
             <span class="header__user-drop-arrow"><span class="icon-arrow_dropdown"></span></span>
           </button>
-          <div class="dropdown">
-            <div class="dropdown__label">Название</div>
-            <div class="dropdown__filter open" onclick="this.classList.toggle('open')">
-              <div class="dropdown__current-item">
-                Показать все отделы
-                <div class="dropdown__arrow"><span class="icon-arrow_dropdown"></span></div>
-              </div>
-              <div class="dropdown__list-options">
-                <div class="dropdown__option">
-                  Отдел-1
-                </div>
-                <div class="dropdown__option">
-                  Отдел-2
-                </div>
-                <div class="dropdown__option">
-                  Отдел-3
-                </div>
-              </div>
-            </div>
-          </div>
+          <ul class="ul header__user-dropdown">
+            <li class="ul__item">
+              <a href="#" class="ul__link">Профиль</a>
+            </li>
+            <li class="ul__item">
+              <a href="#" class="ul__link">Заказы</a>
+            </li>
+            <li class="ul__item">
+              <a href="#" class="ul__link">Выход</a>
+            </li>
+          </ul>
         </div>
         <a href="#" class="header__cart">
           <span class="header__cart-icon"><span class="icon-cart"></span></span>
@@ -246,6 +237,14 @@
   document.querySelector('.header__search-form .search-form__close-button').onclick = function () {
     document.querySelector('.header__search').classList.remove('header__search--active');
   };
+
+  /* toggleHeaderUserDropdown */
+
+  document.querySelector('.header__user-button').onclick = function () {
+    document.querySelector('.header__user-dropdown').classList.toggle('header__user-dropdown--active');
+  };
+
+
 
 </script>
 

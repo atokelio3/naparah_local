@@ -329,10 +329,16 @@
 
   }
 
-}
+  &__user-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 15px);
+    right: 0;
+    min-width: 200px;
+  }
 
+  &__user-dropdown--active {
+    display: block;
+  }
 
-.header__user .dropdown {
-  display: none;
-  position: absolute;
 }

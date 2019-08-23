@@ -385,6 +385,21 @@ body {
 .radio__item-hidden:checked ~ .radio__item-mark:after {
   display: block; }
 
+.ul {
+  margin: 0;
+  padding: 8px 0;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); }
+  .ul__link {
+    display: block;
+    padding: 7px 15px;
+    font-size: 13px;
+    color: #92b3b2;
+    transition: background-color 0.3s; }
+  .ul__link:hover {
+    background-color: #f0f7f7; }
+
 .dropdown {
   position: relative; }
   .dropdown__label {
@@ -652,10 +667,14 @@ body {
     font-size: 9px; }
     .header__user-drop-arrow span:before {
       color: #92b3b2; }
-
-.header__user .dropdown {
-  display: none;
-  position: absolute; }
+  .header__user-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 15px);
+    right: 0;
+    min-width: 200px; }
+  .header__user-dropdown--active {
+    display: block; }
 
 .sidebar {
   display: none;
