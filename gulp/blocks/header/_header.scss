@@ -2,9 +2,9 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 5;
   width: 100%;
   height: 70px;
-  z-index: 5;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   background-color: $color-white;
 
@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 4;
     width: 55px;
     height: 70px;
     font-size: 23px;
@@ -51,6 +52,7 @@
   }
 
   &__center-wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     height: 100%;
@@ -65,11 +67,45 @@
   &__logo {
     display: block;
     width: 100px;
+
+    @media (min-width: $screen-md) {
+      order: 1;
+      margin-left: 80px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 135px;
+      margin-left: 180px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-left: 270px;
+    }
+
   }
 
   &__search {
+    margin-left: auto;
+
+    @media (min-width: $screen-md) {
+      position: relative;
+      margin-left: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-left: 20px;
+    }
+
+    @media (min-width: $screen-xxl) {
+      margin-left: 40px;
+    }
+
+  }
+
+  &__search-form {
     display: none;
-    position: fixed;
+    position: absolute;
+    z-index: 5;
     top: 0;
     left: 0;
     width: 100%;
@@ -78,13 +114,36 @@
     background-color: $color-white;
 
     @media (min-width: $screen-sm) {
-      padding: 17px 75px;
+      left: 53px;
+      max-width: 460px;
+      padding: 17px 0;
+    }
+
+    @media (min-width: $screen-md) {
+      top: 0;
+      left: 0;
+      width: 280px;
+      height: unset;
+      padding: 0;
+      background-color: unset;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 200px;
+    }
+
+    @media (min-width: $screen-xl) {
+      width: 280px;
     }
 
   }
 
   &__search--active {
-    display: block;
+
+    .header__search-form {
+      display: block;
+    }
+
   }
 
   &__search-button {
@@ -98,20 +157,182 @@
     background-color: transparent;
     margin-left: auto;
     font-size: 20px;
+    cursor: pointer;
 
     span:before {
       color: $color-main;
     }
 
+    @media (min-width: $screen-md) {
+      font-size: 18px;
+      opacity: 0.7;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      span:before {
+        color: $grey11;
+      }
+
+    }
+
   }
 
   &__cart {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      order: 3;
+    }
+
+  }
+
+  &__cart-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 35px;
     font-size: 22px;
+
+    @media (min-width: $screen-md) {
+      width: unset;
+      height: unset;
+      font-size: 16px;
+    }
+
   }
 
+  &__cart-amount {
+    display: none;
+    margin: 0 3px 0 7px;
+    font-size: $font-size--sm;
+    color: $grey5;
+
+    @media (min-width: $screen-md) {
+      display: block;
+    }
+
+  }
+
+  &__cart-price {
+    display: none;
+    font-size: $font-size;
+    color: $grey6;
+    font-weight: 500;
+
+    @media (min-width: $screen-md) {
+      display: block;
+    }
+
+  }
+
+  &__phone {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      align-items: center;
+    }
+
+  }
+
+  &__phone-text-block {
+    display: none;
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+  &__phone-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 35px;
+    font-size: 25px;
+    margin-right: 10px;
+  }
+
+  &__phone-title {
+    font-size: $font-size--xs;
+    color: $grey5;
+  }
+
+  &__phone-number {
+    font-size: $font-size--sm;
+    color: $grey6;
+
+    span {
+      font-size: $font-size;
+      font-weight: 700;
+    }
+
+  }
+
+  &__user {
+    display: none;
+    order: 2;
+    position: relative;
+    margin-left: 115px;
+
+    @media (min-width: $screen-md) {
+      display: block;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-left: 65px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-left: 165px;
+    }
+
+    @media (min-width: $screen-xxl) {
+      margin-left: 225px;
+    }
+
+  }
+
+  &__user-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &__user-icon {
+    font-size: 16px;
+  }
+
+  &__user-name {
+    margin: 0 7px;
+    font-size: $font-size;
+    color: $grey5;
+  }
+
+  &__user-drop-arrow {
+    font-size: 9px;
+
+    span:before {
+      color: $grey5;
+    }
+
+  }
+
+}
+
+
+.header__user .dropdown {
+  display: none;
+  position: absolute;
 }
