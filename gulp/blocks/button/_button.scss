@@ -18,8 +18,8 @@
   }
 
   &--secondary {
-    background-color: $grey1;
-    color: $grey2;
+    background-color: $grey--lightest;
+    color: $color-secondary--light;
   }
 
   &--secondary:hover {
@@ -29,8 +29,8 @@
 
   &--disable, &--disable:hover {
     background-color: transparent;
-    border: 1px solid $grey0;
-    color: $grey3;
+    border: 1px solid $color-secondary--lightest;
+    color: $color-secondary--light;
     cursor: default;
   }
 

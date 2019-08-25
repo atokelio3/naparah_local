@@ -11,4 +11,8 @@
     flex: 0 0 auto;
   }
 
+  @media (min-width: $screen-xxxl) {
+    padding-left: 110px;
+  }
+
 }

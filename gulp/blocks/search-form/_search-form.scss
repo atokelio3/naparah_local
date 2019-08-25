@@ -8,10 +8,10 @@
     padding: 0 40px;
     border: none;
     border-radius: $border-radius;
-    background-color: $grey8;
+    background-color: $color-background;
     font-family: $font-family;
     font-size: $font-size;
-    color: $grey6;
+    color: $color-secondary;
   }
 
   &__icon {
@@ -40,7 +40,7 @@
     font-size: $font-size--xs;
 
     span:before {
-      color: $grey11;
+      color: $color-secondary--lighten;
     }
 
   }

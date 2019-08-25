@@ -4,7 +4,7 @@
   &__label {
     position: relative;
     font-size: $font-size--sm;
-    color: $grey5;
+    color: $color-secondary--lighten;
     z-index: 3;
   }
 
@@ -12,9 +12,9 @@
     position: relative;
     padding: 18px 0 10px;
     font-size: $font-size;
-    color: $grey6;
+    color: $color-secondary;
     box-sizing: border-box;
-    border-bottom: 1px solid $grey4;
+    border-bottom: 1px solid $color-secondary--lightest;
     cursor: pointer;
     z-index: 3;
   }
@@ -36,7 +36,7 @@
   &__option {
     padding: 13px 20px;
     font-size: $font-size;
-    color: $grey5;
+    color: $color-secondary--lighten;
   }
 
   &__option:hover {

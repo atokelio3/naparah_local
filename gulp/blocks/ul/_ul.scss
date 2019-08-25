@@ -9,12 +9,12 @@
     display: block;
     padding: 7px 15px;
     font-size: 13px;
-    color: $grey5;
+    color: $color-secondary--lighten;
     transition: background-color 0.3s;
   }
 
   &__link:hover {
-    background-color: $grey12;
+    background-color: $color-background--light;
   }
 
 }

@@ -2,7 +2,7 @@
   display: inline-block;
   position: relative;
   cursor: pointer;
-  color: $grey6;
+  color: $color-secondary;
   font-size: $font-size;
   line-height: 1.5;
   padding-left: 40px;
@@ -22,7 +22,7 @@
     height: 20px;
     width: 20px;
     border-radius: 5px;
-    border: 1px solid $grey4;
+    border: 1px solid $color-secondary--lightest;
   }
 
   &__mark:after {

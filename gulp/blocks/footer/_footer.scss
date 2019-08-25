@@ -1,3 +1,108 @@
 .footer {
-  background-color: $grey7;
+  padding: 25px 0;
+  background-color: $color-secondary--darkest;
+
+  &__content {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      align-items: center;
+    }
+
+  }
+
+  &__logo {
+    display: none;
+    width: 100px;
+
+    @media (min-width: $screen-md) {
+      display: block;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 125px;
+    }
+
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-md) {
+      order: 1;
+      margin-left: auto;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-right: 80px;
+    }
+
+  }
+
+  &__social-item {
+    font-size: 17px;
+    color: $color-white;
+    margin-right: 25px;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    @media (min-width: $screen-md) {
+      opacity: 0.4;
+    }
+
+  }
+
+  &__social-item:last-child {
+    margin-right: 0;
+  }
+
+  &__text-copyright {
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.3;
+    font-size: $font-size--sm;
+    color: $grey;
+
+    span {
+      white-space: nowrap;
+    }
+
+    @media (min-width: $screen-md) {
+      order: 2;
+      margin-bottom: 0;
+      padding-left: 40px;
+    }
+
+  }
+
+  &__agreement-link-wrapper {
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      padding: 0 20px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 60px;
+    }
+
+  }
+
+  &__agreement-link {
+    text-decoration: underline;
+    font-size: $font-size--sm;
+    color: $grey;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+  }
+
 }

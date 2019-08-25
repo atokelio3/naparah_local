@@ -12,6 +12,7 @@
 
   @media (min-width: $screen-md) {
     max-width: 710px;
+    padding-left: 75px;
   }
 
   @media (min-width: $screen-lg) {
@@ -23,7 +24,7 @@
   }
 
   @media (min-width: $screen-xxl) {
-    max-width: 1215px;
+    max-width: 1290px;
   }
 
 }
