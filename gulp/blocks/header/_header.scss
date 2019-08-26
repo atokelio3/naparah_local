@@ -87,6 +87,7 @@
     padding-left: 55px;
 
     @media (min-width: $screen-sm) {
+      position: relative;
       padding-left: 0;
     }
 
@@ -146,14 +147,12 @@
     background-color: $color-white;
 
     @media (min-width: $screen-sm) {
-      left: 53px;
       max-width: 460px;
       padding: 17px 0;
     }
 
     @media (min-width: $screen-md) {
       top: 0;
-      left: 0;
       width: 280px;
       height: unset;
       padding: 0;

@@ -38,11 +38,17 @@
     border: none;
     background-color: transparent;
     font-size: $font-size--xs;
+    cursor: pointer;
 
     span:before {
       color: $color-secondary--lighten;
     }
 
+  }
+
+  &__autocomplete-list {
+    position: relative;
+    top: 5px;
   }
 
 }
