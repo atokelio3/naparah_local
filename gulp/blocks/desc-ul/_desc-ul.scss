@@ -38,14 +38,14 @@
   }
 
   &__item-title {
-    font-size: $font-size;
+    font-size: 1rem;
     font-weight: 700;
     color: $color-secondary;
     margin-bottom: 5px;
   }
 
   &__item-desc {
-    font-size: $font-size--sm;
+    font-size: 0.8571rem;
     color: $color-main;
   }
 

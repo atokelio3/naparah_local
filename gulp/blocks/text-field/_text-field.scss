@@ -8,12 +8,12 @@
     border: none;
     border-bottom: 1px solid $color-secondary--lightest;
     font-family: $font-family;
-    font-size: $font-size;
+    font-size: 1rem;
     color: $color-secondary;
   }
 
   &__input::placeholder {
-    font-size: $font-size--sm;
+    font-size: 0.8571rem;
     color: $color-secondary--lighten;
   }
 
@@ -27,7 +27,7 @@
     position: absolute;
     bottom: -22px;
     right: 0;
-    font-size: $font-size--sm;
+    font-size: 0.8571rem;
     color: $color-error;
   }
 

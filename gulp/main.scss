@@ -7,8 +7,7 @@
 @import "base";
 
 /* blocks */
-@import "blocks/general-wrapper/general-wrapper";
-@import "blocks/center-wrapper/center-wrapper";
+@import "blocks/main-title/main-title";
 @import "blocks/button/button";
 @import "blocks/text-field/text-field";
 @import "blocks/checkbox/checkbox";
@@ -16,6 +15,8 @@
 @import "blocks/ul/ul";
 @import "blocks/desc-ul/desc-ul";
 @import "blocks/dropdown/dropdown";
+@import "blocks/general-wrapper/general-wrapper";
+@import "blocks/center-wrapper/center-wrapper";
 @import "blocks/header/header";
 @import "blocks/sidebar/sidebar";
 @import "blocks/search-form/search-form";

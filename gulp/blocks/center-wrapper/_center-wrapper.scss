@@ -30,6 +30,11 @@
 }
 
 .center-wrapper--content {
-  padding-top: 130px;
+  padding-top: 100px;
   padding-bottom: 50px;
+
+  @media (min-width: $screen-md) {
+    padding-top: 130px;
+  }
+
 }

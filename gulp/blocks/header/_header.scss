@@ -69,7 +69,7 @@
     height: 70px;
     width: 245px;
     padding: 0 26px;
-    font-size: $font-size--lg;
+    font-size: 1.286rem;
     font-weight: 500;
     color: $color-white;
     background-color: $color-main;
@@ -241,7 +241,7 @@
   &__cart-amount {
     display: none;
     margin: 0 3px 0 7px;
-    font-size: $font-size--sm;
+    font-size: 0.8571rem;
     color: $color-secondary--lighten;
 
     @media (min-width: $screen-md) {
@@ -252,7 +252,7 @@
 
   &__cart-price {
     display: none;
-    font-size: $font-size;
+    font-size: 1rem;
     color: $color-secondary;
     font-weight: 500;
 
@@ -292,16 +292,16 @@
   }
 
   &__phone-title {
-    font-size: $font-size--xs;
+    font-size: 0.7857rem;
     color: $color-secondary--lighten;
   }
 
   &__phone-number {
-    font-size: $font-size--sm;
+    font-size: 0.8571rem;
     color: $color-secondary;
 
     span {
-      font-size: $font-size;
+      font-size: 1rem;
       font-weight: 700;
     }
 
@@ -346,7 +346,7 @@
 
   &__user-name {
     margin: 0 7px;
-    font-size: $font-size;
+    font-size: 1rem;
     color: $color-secondary--lighten;
   }
 

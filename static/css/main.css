@@ -203,6 +203,7 @@
 
 html {
   height: 100%;
+  font-size: 14px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -215,7 +216,7 @@ a {
 
 body {
   height: 100%;
-  font-size: 14px;
+  font-size: inherit;
   font-family: "GothamPro", Verdana, sans-serif;
   line-height: 1.2;
   margin: 0;
@@ -227,54 +228,12 @@ body {
   width: 100%; }
 
 /* blocks */
-.general-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%; }
-  .general-wrapper__content {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto; }
-  .general-wrapper__footer {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto; }
-  @media (min-width: 1600px) {
-    .general-wrapper {
-      padding-left: 110px; } }
-
-.center-wrapper {
-  width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-right: auto;
-  margin-left: auto; }
-  @media (min-width: 576px) {
-    .center-wrapper {
-      max-width: 540px;
-      padding-left: 55px; } }
-  @media (min-width: 768px) {
-    .center-wrapper {
-      max-width: 710px;
-      padding-left: 75px; } }
-  @media (min-width: 992px) {
-    .center-wrapper {
-      max-width: 950px; } }
-  @media (min-width: 1200px) {
-    .center-wrapper {
-      max-width: 1140px; } }
-  @media (min-width: 1350px) {
-    .center-wrapper {
-      max-width: 1290px; } }
-
-.center-wrapper--content {
-  padding-top: 130px;
-  padding-bottom: 50px; }
+.main-title {
+  font-size: 1.714rem;
+  color: #3d5b5a;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0; }
 
 .button {
   display: inline-block;
@@ -283,7 +242,7 @@ body {
   text-decoration: none;
   font-family: "GothamPro", Verdana, sans-serif;
   background-color: #a7c205;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 700;
   border-radius: 18px;
   color: #fff;
@@ -314,22 +273,22 @@ body {
     border: none;
     border-bottom: 1px solid #cedfde;
     font-family: "GothamPro", Verdana, sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     color: #3d5b5a; }
   .text-field__input::-webkit-input-placeholder {
-    font-size: 12px;
+    font-size: 0.8571rem;
     color: #92b3b2; }
   .text-field__input::-moz-placeholder {
-    font-size: 12px;
+    font-size: 0.8571rem;
     color: #92b3b2; }
   .text-field__input:-ms-input-placeholder {
-    font-size: 12px;
+    font-size: 0.8571rem;
     color: #92b3b2; }
   .text-field__input::-ms-input-placeholder {
-    font-size: 12px;
+    font-size: 0.8571rem;
     color: #92b3b2; }
   .text-field__input::placeholder {
-    font-size: 12px;
+    font-size: 0.8571rem;
     color: #92b3b2; }
   .text-field__input:focus {
     outline: none;
@@ -339,7 +298,7 @@ body {
     position: absolute;
     bottom: -22px;
     right: 0;
-    font-size: 12px;
+    font-size: 0.8571rem;
     color: #ec704b; }
 
 .text-field--error .text-field__input {
@@ -353,7 +312,7 @@ body {
   position: relative;
   cursor: pointer;
   color: #3d5b5a;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.5;
   padding-left: 40px;
   -webkit-user-select: none;
@@ -393,7 +352,7 @@ body {
   position: relative;
   padding-left: 40px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 1rem;
   color: #3d5b5a;
   line-height: 1.5;
   -webkit-user-select: none;
@@ -484,25 +443,25 @@ body {
   .desc-ul__link:hover {
     background-color: #f0f7f7; }
   .desc-ul__item-title {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 700;
     color: #3d5b5a;
     margin-bottom: 5px; }
   .desc-ul__item-desc {
-    font-size: 12px;
+    font-size: 0.8571rem;
     color: #a7c205; }
 
 .dropdown {
   position: relative; }
   .dropdown__label {
     position: relative;
-    font-size: 12px;
+    font-size: 0.8571rem;
     color: #92b3b2;
     z-index: 3; }
   .dropdown__current-item {
     position: relative;
     padding: 18px 0 10px;
-    font-size: 14px;
+    font-size: 1rem;
     color: #3d5b5a;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -524,7 +483,7 @@ body {
     cursor: pointer; }
   .dropdown__option {
     padding: 13px 20px;
-    font-size: 14px;
+    font-size: 1rem;
     color: #92b3b2; }
   .dropdown__option:hover {
     color: #a7c205; }
@@ -542,6 +501,58 @@ body {
   .dropdown__filter.open .dropdown__arrow {
     -webkit-transform: translateY(-5px) rotate(180deg);
     transform: translateY(-5px) rotate(180deg); }
+
+.general-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%; }
+  .general-wrapper__content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto; }
+  .general-wrapper__footer {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto; }
+  @media (min-width: 1600px) {
+    .general-wrapper {
+      padding-left: 110px; } }
+
+.center-wrapper {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 576px) {
+    .center-wrapper {
+      max-width: 540px;
+      padding-left: 55px; } }
+  @media (min-width: 768px) {
+    .center-wrapper {
+      max-width: 710px;
+      padding-left: 75px; } }
+  @media (min-width: 992px) {
+    .center-wrapper {
+      max-width: 950px; } }
+  @media (min-width: 1200px) {
+    .center-wrapper {
+      max-width: 1140px; } }
+  @media (min-width: 1350px) {
+    .center-wrapper {
+      max-width: 1290px; } }
+
+.center-wrapper--content {
+  padding-top: 100px;
+  padding-bottom: 50px; }
+  @media (min-width: 768px) {
+    .center-wrapper--content {
+      padding-top: 130px; } }
 
 .header {
   display: -webkit-box;
@@ -606,7 +617,7 @@ body {
     height: 70px;
     width: 245px;
     padding: 0 26px;
-    font-size: 18px;
+    font-size: 1.286rem;
     font-weight: 500;
     color: #fff;
     background-color: #a7c205; }
@@ -751,14 +762,14 @@ body {
   .header__cart-amount {
     display: none;
     margin: 0 3px 0 7px;
-    font-size: 12px;
+    font-size: 0.8571rem;
     color: #92b3b2; }
     @media (min-width: 768px) {
       .header__cart-amount {
         display: block; } }
   .header__cart-price {
     display: none;
-    font-size: 14px;
+    font-size: 1rem;
     color: #3d5b5a;
     font-weight: 500; }
     @media (min-width: 768px) {
@@ -799,13 +810,13 @@ body {
     font-size: 25px;
     margin-right: 15px; }
   .header__phone-title {
-    font-size: 11px;
+    font-size: 0.7857rem;
     color: #92b3b2; }
   .header__phone-number {
-    font-size: 12px;
+    font-size: 0.8571rem;
     color: #3d5b5a; }
     .header__phone-number span {
-      font-size: 14px;
+      font-size: 1rem;
       font-weight: 700; }
   .header__user {
     display: none;
@@ -841,7 +852,7 @@ body {
     font-size: 16px; }
   .header__user-name {
     margin: 0 7px;
-    font-size: 14px;
+    font-size: 1rem;
     color: #92b3b2; }
   .header__user-drop-arrow {
     font-size: 9px; }
@@ -896,7 +907,7 @@ body {
     font-size: 17px;
     color: #a7c205; }
   .sidebar__mobile-nav-text {
-    font-size: 14px;
+    font-size: 1rem;
     color: #284040; }
   .sidebar__mobile-nav-divider {
     display: -webkit-box;
@@ -964,7 +975,7 @@ body {
     margin-right: 27px;
     opacity: 0.45; }
   .sidebar__desktop-nav-text {
-    font-size: 14px;
+    font-size: 1rem;
     color: #fff;
     white-space: nowrap; }
   .sidebar__desktop-nav-divider {
@@ -994,7 +1005,7 @@ body {
     border-radius: 18px;
     background-color: #eef3f3;
     font-family: "GothamPro", Verdana, sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     color: #3d5b5a; }
   .search-form__icon {
     position: absolute;
@@ -1029,7 +1040,7 @@ body {
     padding: 0;
     border: none;
     background-color: transparent;
-    font-size: 11px;
+    font-size: 0.7857rem;
     cursor: pointer; }
     .search-form__close-button span:before {
       color: #92b3b2; }
@@ -1092,7 +1103,7 @@ body {
     margin-bottom: 20px;
     text-align: center;
     line-height: 1.3;
-    font-size: 12px;
+    font-size: 0.8571rem;
     color: #808080; }
     .footer__text-copyright span {
       white-space: nowrap; }
@@ -1113,7 +1124,7 @@ body {
         padding-left: 60px; } }
   .footer__agreement-link {
     text-decoration: underline;
-    font-size: 12px;
+    font-size: 0.8571rem;
     color: #808080; }
     .footer__agreement-link:hover {
       text-decoration: none; }
