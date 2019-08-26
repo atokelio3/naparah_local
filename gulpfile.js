@@ -1,12 +1,17 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 // const browserSync = require('browser-sync').create();
 
 function styles() {
   return gulp.src('./gulp/**/*.scss')
-   .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./static/css'));
-    // .pipe(browserSync.stream());
+      .pipe(sass().on('error', sass.logError))
+      .pipe(autoprefixer({
+        overrideBrowserslist: ['last 2 versions'],
+        cascade: false
+      }))
+      .pipe(gulp.dest('./static/css'));
+  // .pipe(browserSync.stream());
 }
 
 function watch() {
