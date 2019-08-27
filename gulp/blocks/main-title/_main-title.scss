@@ -4,4 +4,9 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $screen-md) {
+    font-size: 2.571rem;
+  }
+
 }

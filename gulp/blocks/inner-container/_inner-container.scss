@@ -1,0 +1,21 @@
+.inner-container {
+  max-width: 845px;
+  margin: 0 auto;
+
+  &--lg {
+    max-width: 1135px;
+  }
+
+  &--md {
+    max-width: 1095px;
+  }
+
+  &--sm {
+    max-width: 615px;
+  }
+
+  &--xs {
+    max-width: 570px;
+  }
+
+}

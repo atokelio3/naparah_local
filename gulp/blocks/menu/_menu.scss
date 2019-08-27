@@ -1,0 +1,95 @@
+.menu {
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 80px;
+    }
+
+  }
+
+  &__item {
+    display: flex;
+    position: relative;
+    width: calc(50% - 7.5px);
+    height: 100px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width: $screen-md) {
+      height: 195px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: calc(33.33% - 20px);
+      margin-bottom: 30px;
+    }
+
+  }
+
+  &__item--big {
+    width: 100%;
+
+    @media (min-width: $screen-lg) {
+      width: calc(50% - 15px);
+    }
+
+  }
+
+  &__item-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 34%, rgba(0, 0, 0, 0.8) 100%);
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__item:nth-last-child(2) {
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__item-link {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 15px;
+
+    @media (min-width: $screen-md) {
+      padding: 30px;
+    }
+
+  }
+
+  &__item-text {
+    font-size: 1.143rem;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @media (min-width: $screen-md) {
+      font-size: 1.714rem;
+    }
+
+  }
+
+}
