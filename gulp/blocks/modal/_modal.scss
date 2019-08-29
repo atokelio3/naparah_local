@@ -1,7 +1,7 @@
 .modal {
   position: fixed;
   z-index: 6;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -14,9 +14,16 @@
   &__dialog {
     position: relative;
     width: 280px;
-    height: 370px;
     padding: 50px 30px 60px;
     background-color: $color-white;
+    clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%, 0 40px);
+
+    @media (min-width: $screen-md) {
+      width: 450px;
+      padding: 50px 55px 60px;
+      clip-path: polygon(70px 0, 100% 0, 100% calc(100% - 70px), calc(100% - 70px) 100%, 0 100%, 0 70px);
+    }
+
   }
 
   &__close-button {
@@ -44,4 +51,8 @@
     text-transform: uppercase;
   }
 
+}
+
+.modal--active {
+  display: flex;
 }

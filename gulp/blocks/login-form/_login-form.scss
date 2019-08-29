@@ -2,6 +2,11 @@
 
   &__title {
     margin-bottom: 55px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 80px;
+    }
+
   }
 
   &__text-field {
@@ -20,6 +25,76 @@
     font-size: $font-size;
     color: $color-secondary;
     margin-bottom: 45px;
+
+    .link {
+      white-space: nowrap;
+    }
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 75px;
+    }
+
+  }
+
+  &__button-big {
+    white-space: nowrap;
+    margin-left: -10px;
+
+    @media (min-width: $screen-md) {
+      margin-left: 0;
+    }
+
+  }
+
+  &__button {
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      width: 205px;
+    }
+
+  }
+
+  &__verify-visible {
+    display: none;
+  }
+
+}
+
+.login-form--verify {
+
+  .login-form__verify-hidden {
+    display: none;
+  }
+
+  .login-form__verify-visible {
+    display: block;
+  }
+
+  .login-form__title {
+    margin-bottom: 45px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 55px;
+    }
+
+  }
+
+  .login-form__text-field {
+    margin-bottom: 30px;
+  }
+
+  .login-form__text {
+    margin-bottom: 25px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 30px;
+    }
+
+  }
+
+  .login-form__button {
+    display: inline-block;
   }
 
 }

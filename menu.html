@@ -6,7 +6,7 @@
   <title>На Парах - Меню</title>
   <link rel="stylesheet" href="static/css/main.css">
 </head>
-<body>
+<body class="body">
 
 <div class="general-wrapper">
   <div class="general-wrapper__content">
@@ -21,12 +21,17 @@
             <div class="text-field login-form__text-field">
               <input type="text" class="text-field__input login-form__input" placeholder="Введите номер телефона">
             </div>
-<!--            <div class="text-field">-->
-<!--              <input type="text" class="text-field__input login-form__input" placeholder="Название">-->
-<!--            </div>-->
-            <div class="login-form__text">При входе вы <br> <a href="#" class="link">соглашаетесь с уловиями</a>
+            <div class="text-field login-form__text-field login-form__verify-visible">
+              <input type="text" class="text-field__input login-form__input" placeholder="СМС-пароль">
             </div>
-            <button class="button">Отправить смс-пароль</button>
+            <div class="login-form__text login-form__verify-hidden">
+              При входе вы <a href="#" class="link">соглашаетесь с уловиями</a>
+            </div>
+            <div class="login-form__text login-form__verify-visible">
+              Вам поступит звонок с кодом подтверждения через 3 минуты
+            </div>
+            <button class="button login-form__button-big login-form__verify-hidden">Отправить смс-пароль</button>
+            <button class="button login-form__button login-form__verify-visible">Войти</button>
           </form>
         </div>
       </div>
@@ -321,6 +326,24 @@
 
   document.querySelector('.header__user-button').onclick = function () {
     document.querySelector('.header__user-dropdown').classList.toggle('header__user-dropdown--active');
+  };
+
+  /* handleModalWindow */
+
+  document.querySelector('.header__user-button').onclick = function () {
+    document.querySelector('.modal').classList.add('modal--active');
+    document.querySelector('.body').classList.add('body--no-scroll');
+  };
+
+  document.querySelector('.modal__close-button').onclick = function () {
+    document.querySelector('.modal').classList.remove('modal--active');
+    document.querySelector('.body').classList.remove('body--no-scroll');
+  };
+
+  /* changeLoginForm */
+
+  document.querySelector('.login-form .button').onclick = function () {
+    document.querySelector('.login-form').classList.toggle('login-form--verify');
   };
 
 
