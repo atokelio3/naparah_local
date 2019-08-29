@@ -224,6 +224,82 @@ body {
   background-color: #eef3f3; }
 
 /* blocks */
+.modal {
+  position: fixed;
+  z-index: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(35, 35, 38, 0.9); }
+  .modal__dialog {
+    position: relative;
+    width: 280px;
+    height: 370px;
+    padding: 50px 30px 60px;
+    background-color: #fff; }
+  .modal__close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background-color: #a7c205;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer; }
+  .modal__content {
+    text-align: center; }
+  .modal__title {
+    font-size: 1.714rem;
+    color: #3d5b5a;
+    font-weight: 700;
+    text-transform: uppercase; }
+
+.login-form__title {
+  margin-bottom: 55px; }
+
+.login-form__text-field {
+  margin-bottom: 35px; }
+
+.login-form__input {
+  text-align: center; }
+
+.login-form__input::-webkit-input-placeholder {
+  text-align: center; }
+
+.login-form__input::-moz-placeholder {
+  text-align: center; }
+
+.login-form__input:-ms-input-placeholder {
+  text-align: center; }
+
+.login-form__input::-ms-input-placeholder {
+  text-align: center; }
+
+.login-form__input::placeholder {
+  text-align: center; }
+
+.login-form__text {
+  font-size: 14px;
+  color: #3d5b5a;
+  margin-bottom: 45px; }
+
 .main-title {
   font-size: 1.714rem;
   color: #3d5b5a;
@@ -1226,3 +1302,12 @@ body {
   @media (min-width: 768px) {
     .menu__item-text {
       font-size: 1.714rem; } }
+
+.link {
+  font-size: 14px;
+  color: #a7c205;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .link:hover {
+    color: #96af04;
+    text-decoration: underline; }

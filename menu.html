@@ -10,6 +10,27 @@
 
 <div class="general-wrapper">
   <div class="general-wrapper__content">
+    <div class="modal">
+      <div class="modal__dialog">
+        <button type="button" class="modal__close-button">
+          <span class="icon-close"></span>
+        </button>
+        <div class="modal__content">
+          <form action="#" class="login-form">
+            <div class="modal__title login-form__title">Вход</div>
+            <div class="text-field login-form__text-field">
+              <input type="text" class="text-field__input login-form__input" placeholder="Введите номер телефона">
+            </div>
+<!--            <div class="text-field">-->
+<!--              <input type="text" class="text-field__input login-form__input" placeholder="Название">-->
+<!--            </div>-->
+            <div class="login-form__text">При входе вы <br> <a href="#" class="link">соглашаетесь с уловиями</a>
+            </div>
+            <button class="button">Отправить смс-пароль</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <header class="header">
       <div class="header__sidebar-switcher">
         <div class="header__sidebar-switcher-opening-icon">
@@ -275,7 +296,6 @@
     </div>
   </footer>
 </div>
-
 <script>
 
   /* showSideBar */

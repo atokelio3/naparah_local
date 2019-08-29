@@ -7,6 +7,8 @@
 @import "base";
 
 /* blocks */
+@import "blocks/modal/modal";
+@import "blocks/login-form/login-form";
 @import "blocks/main-title/main-title";
 @import "blocks/content-header/content-header";
 @import "blocks/button/button";
@@ -24,5 +26,6 @@
 @import "blocks/search-form/search-form";
 @import "blocks/footer/footer";
 @import "blocks/menu/menu";
+@import "blocks/link/link";
 @import "blocks/mobile-app/mobile-app";
 

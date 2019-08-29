@@ -1,0 +1,25 @@
+.login-form {
+
+  &__title {
+    margin-bottom: 55px;
+  }
+
+  &__text-field {
+    margin-bottom: 35px;
+  }
+
+  &__input {
+    text-align: center;
+  }
+
+  &__input::placeholder {
+    text-align: center;
+  }
+
+  &__text {
+    font-size: $font-size;
+    color: $color-secondary;
+    margin-bottom: 45px;
+  }
+
+}
