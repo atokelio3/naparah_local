@@ -1,0 +1,24 @@
+.page-header {
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__main-title {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
+
+  }
+
+  &__desc {
+    font-size: 1.143rem;
+    color: $color-secondary--lighten;
+  }
+
+
+}

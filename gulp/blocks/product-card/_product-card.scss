@@ -1,0 +1,106 @@
+.product-card {
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 30px;
+    width: calc(50% - 15px);
+  }
+
+  @media (min-width: $screen-lg) {
+    width: calc(33.33% - 20px);
+  }
+
+  @media (min-width: $screen-xl) {
+    width: calc(25% - 25px);
+  }
+
+  &__img {
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__content {
+    padding: 20px 20px 15px;
+    background-color: $color-white;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: $font-size;
+    line-height: 1;
+    color: $color-secondary;
+  }
+
+  &__weight {
+    font-size: 0.8571rem;
+    font-weight: 500;
+    color: $color-secondary--light;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__info-right {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    font-size: 1.143rem;
+    font-weight: 700;
+    color: $color-secondary;
+
+    span {
+      font-size: 1rem;
+    }
+
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    padding: 6px 20px;
+  }
+
+  &__button:hover {
+
+    .product-card__button-plus {
+      color: $color-white;
+    }
+
+    .product-card__button-icon span:before {
+      color: $color-white;
+    }
+
+  }
+
+  &__button-plus {
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-secondary--light;
+  }
+
+  &__button-icon {
+    font-size: 18px;
+
+    span:before {
+      color: $color-secondary--light;
+    }
+
+  }
+
+}
