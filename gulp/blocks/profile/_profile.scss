@@ -1,0 +1,76 @@
+.profile {
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__form {
+    overflow: hidden;
+    padding: 25px;
+    background-color: $color-white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &__points {
+    margin-bottom: 30px;
+  }
+
+  &__points-content {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+  }
+
+  &__divider {
+    border-bottom: 1px dashed $color-secondary--lightest;
+    transform: scaleX(3.5);
+    margin-bottom: 40px;
+  }
+
+  &__points-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+    font-size: 55px;
+    line-height: 1;
+  }
+
+  &__points-title {
+    font-size: 1rem;
+    color: $color-secondary--lighten;
+  }
+
+  &__points-value {
+    font-size: 2.571rem;
+    line-height: 1;
+    font-weight: 700;
+    color: $color-secondary;
+  }
+
+  &__text-field {
+    margin-bottom: 40px;
+
+    .text-field__input {
+      font-size: 1.143rem;
+    }
+
+    .text-field__input::placeholder {
+      font-size: 1.143rem;
+    }
+
+  }
+
+  &__checkbox {
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    width: 100%;
+  }
+
+  &__button:first-child {
+    margin-bottom: 10px;
+  }
+
+}

@@ -1536,3 +1536,79 @@ a {
     font-size: 18px; }
     .product-card__button-icon span:before {
       color: #709594; }
+
+.profile__title {
+  margin-bottom: 35px; }
+
+.profile__form {
+  overflow: hidden;
+  padding: 25px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+
+.profile__points {
+  margin-bottom: 30px; }
+
+.profile__points-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 15px; }
+
+.profile__divider {
+  border-bottom: 1px dashed #cedfde;
+  -webkit-transform: scaleX(3.5);
+  transform: scaleX(3.5);
+  margin-bottom: 40px; }
+
+.profile__points-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 18px;
+  font-size: 55px;
+  line-height: 1; }
+
+.profile__points-title {
+  font-size: 1rem;
+  color: #92b3b2; }
+
+.profile__points-value {
+  font-size: 2.571rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #3d5b5a; }
+
+.profile__text-field {
+  margin-bottom: 40px; }
+  .profile__text-field .text-field__input {
+    font-size: 1.143rem; }
+  .profile__text-field .text-field__input::-webkit-input-placeholder {
+    font-size: 1.143rem; }
+  .profile__text-field .text-field__input::-moz-placeholder {
+    font-size: 1.143rem; }
+  .profile__text-field .text-field__input:-ms-input-placeholder {
+    font-size: 1.143rem; }
+  .profile__text-field .text-field__input::-ms-input-placeholder {
+    font-size: 1.143rem; }
+  .profile__text-field .text-field__input::placeholder {
+    font-size: 1.143rem; }
+
+.profile__checkbox {
+  margin-bottom: 40px; }
+
+.profile__button {
+  width: 100%; }
+
+.profile__button:first-child {
+  margin-bottom: 10px; }
