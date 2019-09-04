@@ -1,0 +1,28 @@
+.buttons-wrapper {
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__button {
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      width: unset;
+      padding: 10px 40px;
+    }
+
+  }
+
+  &__button:first-child {
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+
+  }
+
+}

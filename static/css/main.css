@@ -256,6 +256,29 @@ a {
     color: #709594;
     cursor: default; }
 
+@media (min-width: 768px) {
+  .buttons-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; } }
+
+.buttons-wrapper__button {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .buttons-wrapper__button {
+      width: unset;
+      padding: 10px 40px; } }
+
+.buttons-wrapper__button:first-child {
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .buttons-wrapper__button:first-child {
+      margin-bottom: 0;
+      margin-right: 10px; } }
+
 .checkbox {
   display: inline-block;
   position: relative;
@@ -1546,9 +1569,24 @@ a {
   background-color: #fff;
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+  @media (min-width: 768px) {
+    .profile__form {
+      padding: 45px 60px 50px; } }
 
 .profile__points {
   margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .profile__points {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      margin-bottom: 40px; } }
 
 .profile__points-content {
   display: -webkit-box;
@@ -1558,12 +1596,18 @@ a {
   -ms-flex-align: end;
   align-items: flex-end;
   margin-bottom: 15px; }
+  @media (min-width: 768px) {
+    .profile__points-content {
+      margin-bottom: 0; } }
 
 .profile__divider {
   border-bottom: 1px dashed #cedfde;
   -webkit-transform: scaleX(3.5);
   transform: scaleX(3.5);
   margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .profile__divider {
+      margin-bottom: 55px; } }
 
 .profile__points-icon {
   display: -webkit-box;
@@ -1575,6 +1619,7 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 42px;
   margin-right: 18px;
   font-size: 55px;
   line-height: 1; }
@@ -1606,9 +1651,3 @@ a {
 
 .profile__checkbox {
   margin-bottom: 40px; }
-
-.profile__button {
-  width: 100%; }
-
-.profile__button:first-child {
-  margin-bottom: 10px; }
