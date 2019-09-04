@@ -1,0 +1,51 @@
+.price-button-wrapper {
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__title {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.143rem;
+    font-weight: 700;
+    color: $color-secondary;
+  }
+
+  &__value {
+    display: inline-block;
+    font-size: 1.714rem;
+    line-height: 1;
+    font-weight: 700;
+    color: $color-secondary;
+
+    span {
+      font-size: 1.429rem;
+    }
+
+  }
+
+  &__button {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 23px;
+
+    @media (min-width: $screen-md) {
+      width: unset;
+      padding: 15px 50px;
+    }
+
+  }
+
+}
