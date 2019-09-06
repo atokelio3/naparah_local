@@ -542,6 +542,31 @@ a {
     font-size: 0.8571rem;
     color: #a7c205; }
 
+.checklist {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .checklist__item {
+    position: relative;
+    padding-left: 30px;
+    font-size: 1rem;
+    color: #709594;
+    margin-bottom: 15px; }
+  .checklist__item:last-child {
+    margin-bottom: 0; }
+  .checklist__item:before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: -1px;
+    width: 6px;
+    height: 14px;
+    border: solid #a7c205;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+
 .link {
   font-size: 14px;
   color: #a7c205;
@@ -2221,3 +2246,9 @@ a {
   font-size: 1.286rem;
   font-weight: 700;
   color: #a7c205; }
+
+.cart__item-checklist {
+  margin: 15px 0 20px; }
+  @media (min-width: 992px) {
+    .cart__item-checklist {
+      margin: 25px 0; } }

@@ -321,4 +321,14 @@
     color: $color-main;
   }
 
+  &__item-checklist {
+    margin: 15px 0 20px;
+
+    @media (min-width: $screen-lg) {
+      margin: 25px 0;
+    }
+
+  }
+
 }
+
