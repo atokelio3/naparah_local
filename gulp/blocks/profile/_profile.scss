@@ -8,7 +8,7 @@
     overflow: hidden;
     padding: 25px;
     background-color: $color-white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: $box-shadow;
 
     @media (min-width: $screen-md) {
       padding: 45px 60px 50px;

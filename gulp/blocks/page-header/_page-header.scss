@@ -1,4 +1,6 @@
 .page-header {
+  position: relative;
+  z-index: 2;
 
   @media (min-width: $screen-md) {
     display: flex;
@@ -21,4 +23,10 @@
   }
 
 
+}
+
+.page-header--between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

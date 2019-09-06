@@ -1,0 +1,110 @@
+.share-link {
+  position: relative;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+  }
+
+  &__button:focus {
+    outline: none;
+  }
+
+  &__content-wrapper {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: -10px;
+
+    @media (min-width: $screen-lg) {
+      top: 0;
+      right: calc(100% + 10px);
+    }
+
+  }
+
+  &__content {
+    position: relative;
+    width: 300px;
+    padding: 15px 5px 15px 15px;
+    border-radius: 3px;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+
+    @media (min-width: $screen-lg) {
+      width: 375px;
+      padding: 15px;
+    }
+
+  }
+
+  &__content:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    background-color: $color-white;
+    transform: rotate(45deg);
+
+    @media (min-width: $screen-lg) {
+      top: 15px;
+      right: -4px;
+    }
+
+  }
+
+  &__copy {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  &__copy-text {
+    overflow: hidden;
+    padding: 13px 15px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+    color: $color-secondary;
+    background-color: $color-background--dark;
+  }
+
+  &__copy-button {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__copy-button:focus {
+    outline: none;
+  }
+
+  &__info {
+    font-size: 0.8571rem;
+    line-height: 1.5;
+    color: $color-secondary--lighten;
+
+    @media (min-width: $screen-lg) {
+      padding-right: 40px;
+    }
+
+  }
+
+}
