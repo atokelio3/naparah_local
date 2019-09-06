@@ -1,0 +1,56 @@
+.amount-switcher {
+  display: flex;
+  align-items: center;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    @media (min-width: $screen-lg) {
+      width: 30px;
+      height: 30px;
+    }
+
+    span {
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      border-radius: 50%;
+      color: $color-white;
+      background-color: $color-main;
+
+      @media (min-width: $screen-lg) {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 17px;
+      }
+
+    }
+
+  }
+
+  &__button:focus {
+    outline: none;
+  }
+
+  &__value {
+    min-width: 25px;
+    text-align: center;
+    font-size: 1.286rem;
+    color: $color-secondary;
+
+    @media (min-width: $screen-lg) {
+      margin: 0 10px;
+    }
+
+  }
+
+}
