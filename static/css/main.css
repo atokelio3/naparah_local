@@ -2252,3 +2252,26 @@ a {
   @media (min-width: 992px) {
     .cart__item-checklist {
       margin: 25px 0; } }
+
+.cart__empty {
+  padding: 80px 25px 125px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff; }
+
+.cart__empty-icon {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 35px;
+  font-size: 85px; }
+  .cart__empty-icon span:before {
+    color: #e5eeee; }
+
+.cart__empty-text {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #92b3b2; }
+  @media (min-width: 768px) {
+    .cart__empty-text {
+      font-size: 1.286rem; } }
