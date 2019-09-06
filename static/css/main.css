@@ -585,7 +585,7 @@ a {
     z-index: 3; }
   .dropdown__current-item {
     position: relative;
-    padding: 18px 0 10px;
+    padding: 14px 15px 10px 0;
     font-size: 1rem;
     color: #3d5b5a;
     -webkit-box-sizing: border-box;
@@ -615,7 +615,7 @@ a {
   .dropdown__arrow {
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 16px;
     font-size: 10px;
     -webkit-transition: 0.3s -webkit-transform ease;
     transition: 0.3s -webkit-transform ease;
@@ -2275,3 +2275,27 @@ a {
   @media (min-width: 768px) {
     .cart__empty-text {
       font-size: 1.286rem; } }
+
+.checkout__form {
+  overflow: hidden;
+  padding: 25px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+
+.checkout__mode {
+  margin-bottom: 50px; }
+  .checkout__mode .radio__item {
+    margin-bottom: 20px; }
+  .checkout__mode .radio__item:last-child {
+    margin-bottom: 0; }
+
+.checkout__restaurant-choice {
+  margin-bottom: 25px; }
+
+.checkout__checkbox {
+  padding-left: 30px;
+  margin-bottom: 50px;
+  font-size: 0.8571rem; }
+  .checkout__checkbox .checkbox__mark {
+    top: -2px; }

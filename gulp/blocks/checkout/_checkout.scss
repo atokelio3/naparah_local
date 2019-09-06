@@ -1,0 +1,38 @@
+.checkout {
+
+  &__form {
+    overflow: hidden;
+    padding: 25px;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+  }
+
+  &__mode {
+    margin-bottom: 50px;
+
+    .radio__item {
+      margin-bottom: 20px;
+    }
+
+    .radio__item:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__restaurant-choice {
+    margin-bottom: 25px;
+  }
+
+  &__checkbox {
+    padding-left: 30px;
+    margin-bottom: 50px;
+    font-size: 0.8571rem;
+
+    .checkbox__mark {
+      top: -2px;
+    }
+
+  }
+
+}
