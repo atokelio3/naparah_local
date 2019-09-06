@@ -230,17 +230,17 @@
         <div class="cart">
           <div class="page-header page-header--between cart__page-header">
             <h1 class="main-title">Корзина</h1>
-            <div class="share-link">
-              <button type="button" class="share-link__button">
+            <div class="share cart__share">
+              <button type="button" class="share__button">
                 <span class="icon-share_02"></span>
               </button>
-              <div class="share-link__content-wrapper">
-                <div class="share-link__content">
-                  <div class="share-link__copy">
-                    <div class="share-link__copy-text">https://app.avocode.com/revisions/53690725/?design=35754263</div>
-                    <button class="share-link__copy-button"><span class="icon-sign_in"></span></button>
+              <div class="share__content-wrapper">
+                <div class="share__content">
+                  <div class="share__copy">
+                    <div class="share__copy-text">https://app.avocode.com/revisions/53690725/?design=35754263</div>
+                    <button class="share__copy-button"><span class="icon-copy-file"></span></button>
                   </div>
-                  <div class="share-link__info">Чтобы поделиться своей корзиной,
+                  <div class="share__info">Чтобы поделиться своей корзиной,
                     скопируйте ссылку и отправьте другу!
                   </div>
                 </div>
@@ -397,54 +397,7 @@
     </div>
   </footer>
 </div>
-<script>
 
-  /* showSideBar */
-
-  var switcher = document.querySelector('.header__sidebar-switcher');
-  switcher.onclick = function () {
-    switcher.classList.toggle('header__sidebar-switcher--active');
-    document.querySelector('.sidebar').classList.toggle('sidebar--active');
-  };
-
-  /* toggleHeaderSearch */
-
-  document.querySelector('.header__search-button').onclick = function () {
-    document.querySelector('.header__search').classList.add('header__search--active');
-    document.querySelector('.header__search .search-form__input').focus();
-  };
-
-  document.querySelector('.header__search-form .search-form__close-button').onclick = function () {
-    document.querySelector('.header__search').classList.remove('header__search--active');
-  };
-
-  /* toggleHeaderUserDropdown */
-
-  document.querySelector('.header__user-button').onclick = function () {
-    document.querySelector('.header__user-dropdown').classList.toggle('header__user-dropdown--active');
-  };
-
-  /* handleModalWindow */
-
-  document.querySelector('.header__user-button').onclick = function () {
-    document.querySelector('.modal').classList.add('modal--active');
-    document.querySelector('.body').classList.add('body--no-scroll');
-  };
-
-  document.querySelector('.modal__close-button').onclick = function () {
-    document.querySelector('.modal').classList.remove('modal--active');
-    document.querySelector('.body').classList.remove('body--no-scroll');
-  };
-
-  /* changeLoginForm */
-
-  document.querySelector('.login-form .button').onclick = function () {
-    document.querySelector('.login-form').classList.toggle('login-form--verify');
-  };
-
-
-
-</script>
-
+<script src="static/js/main.js"></script>
 </body>
 </html>

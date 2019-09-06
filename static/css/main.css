@@ -1,8 +1,8 @@
 /* libs */
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot?vjg0z5");
-  src: url("../fonts/icomoon/icomoon.eot?vjg0z5#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?vjg0z5") format("truetype"), url("../fonts/icomoon/icomoon.woff?vjg0z5") format("woff"), url("../fonts/icomoon/icomoon.svg?vjg0z5#icomoon") format("svg");
+  src: url("../fonts/icomoon/icomoon.eot?qsef9z");
+  src: url("../fonts/icomoon/icomoon.eot?qsef9z#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?qsef9z") format("truetype"), url("../fonts/icomoon/icomoon.woff?qsef9z") format("woff"), url("../fonts/icomoon/icomoon.svg?qsef9z#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
@@ -19,6 +19,10 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-copy-file:before {
+  content: "\e92e";
+  color: #a7c205; }
 
 .icon-history:before {
   content: "\e929";
@@ -810,9 +814,9 @@ a {
 .text-field--error .text-field__error-message {
   display: block; }
 
-.share-link {
+.share {
   position: relative; }
-  .share-link__button {
+  .share__button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -832,17 +836,18 @@ a {
     -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer; }
-  .share-link__button:focus {
+  .share__button:focus {
     outline: none; }
-  .share-link__content-wrapper {
+  .share__content-wrapper {
+    display: none;
     position: absolute;
     top: calc(100% + 10px);
     right: -10px; }
     @media (min-width: 992px) {
-      .share-link__content-wrapper {
+      .share__content-wrapper {
         top: 0;
         right: calc(100% + 10px); } }
-  .share-link__content {
+  .share__content {
     position: relative;
     width: 300px;
     padding: 15px 5px 15px 15px;
@@ -851,10 +856,10 @@ a {
     -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
     @media (min-width: 992px) {
-      .share-link__content {
+      .share__content {
         width: 375px;
         padding: 15px; } }
-  .share-link__content:before {
+  .share__content:before {
     display: block;
     content: '';
     position: absolute;
@@ -866,15 +871,15 @@ a {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
     @media (min-width: 992px) {
-      .share-link__content:before {
+      .share__content:before {
         top: 15px;
         right: -4px; } }
-  .share-link__copy {
+  .share__copy {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px; }
-  .share-link__copy-text {
+  .share__copy-text {
     overflow: hidden;
     padding: 13px 15px 10px;
     border-radius: 5px;
@@ -883,7 +888,7 @@ a {
     font-size: 1rem;
     color: #3d5b5a;
     background-color: #e7efee; }
-  .share-link__copy-button {
+  .share__copy-button {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     width: 40px;
@@ -893,15 +898,18 @@ a {
     font-size: 20px;
     background-color: transparent;
     cursor: pointer; }
-  .share-link__copy-button:focus {
+  .share__copy-button:focus {
     outline: none; }
-  .share-link__info {
+  .share__info {
     font-size: 0.8571rem;
     line-height: 1.5;
     color: #92b3b2; }
     @media (min-width: 992px) {
-      .share-link__info {
+      .share__info {
         padding-right: 40px; } }
+
+.share--active .share__content-wrapper {
+  display: block; }
 
 .general-wrapper {
   display: -webkit-box;
