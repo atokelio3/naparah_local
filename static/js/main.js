@@ -35,21 +35,6 @@ document.querySelector('.login-form').parentElement.parentElement.querySelector(
   document.querySelector('.body').classList.remove('body--no-scroll');
 };
 
-/* handleActiveModalWindow */
-
-var cartItemCloseBtns = document.querySelectorAll('.cart__item-close');
-for (var i = 0; i < cartItemCloseBtns.length; i++) {
-  cartItemCloseBtns[i].onclick = function () {
-    document.querySelector('.modal-action-form').parentElement.parentElement.parentElement.classList.add('modal--active');
-    document.querySelector('.body').classList.add('body--no-scroll');
-  };
-}
-
-document.querySelector('.modal-action-form').parentElement.parentElement.querySelector('.modal__close-button').onclick = function () {
-  document.querySelector('.modal-action-form').parentElement.parentElement.parentElement.classList.remove('modal--active');
-  document.querySelector('.body').classList.remove('body--no-scroll');
-};
-
 /* changeLoginForm */
 
 document.querySelector('.login-form .button').onclick = function () {
