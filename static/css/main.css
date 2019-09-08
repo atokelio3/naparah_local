@@ -305,6 +305,12 @@ a {
       margin-right: 10px; } }
 
 @media (min-width: 768px) {
+  .buttons-wrapper--center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+@media (min-width: 768px) {
   .price-button-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -701,6 +707,8 @@ a {
     color: #3d5b5a;
     font-weight: 700;
     text-transform: uppercase; }
+  .modal__title--sm {
+    font-size: 1.286rem; }
 
 .modal--active {
   display: -webkit-box;
@@ -783,6 +791,17 @@ a {
 
 .login-form--verify .login-form__button {
   display: inline-block; }
+
+.modal-action-form__title {
+  margin-bottom: 15px; }
+
+.modal-action-form__text {
+  font-size: 1.143rem;
+  color: #92b3b2;
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .modal-action-form__text {
+      margin-bottom: 45px; } }
 
 .main-title {
   font-size: 1.714rem;

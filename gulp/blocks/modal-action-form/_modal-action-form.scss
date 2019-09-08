@@ -1,0 +1,18 @@
+.modal-action-form {
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 1.143rem;
+    color: $color-secondary--lighten;
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 45px;
+    }
+
+  }
+
+}

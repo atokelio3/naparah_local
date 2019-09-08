@@ -26,3 +26,11 @@
   }
 
 }
+
+.buttons-wrapper--center {
+
+  @media (min-width: $screen-md) {
+    justify-content: center;
+  }
+
+}
