@@ -2318,3 +2318,84 @@ a {
   font-size: 0.8571rem; }
   .checkout__checkbox .checkbox__mark {
     top: -2px; }
+
+.delivery-areas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 40px 25px 50px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+  @media (min-width: 768px) {
+    .delivery-areas {
+      padding: 60px; } }
+  .delivery-areas__title {
+    margin-bottom: 30px;
+    font-size: 1.143rem;
+    line-height: 1.5;
+    color: #3d5b5a; }
+    .delivery-areas__title br {
+      display: none; }
+    @media (min-width: 768px) {
+      .delivery-areas__title {
+        margin-bottom: 35px;
+        font-size: 1.714rem;
+        line-height: 1.25; }
+        .delivery-areas__title br {
+          display: block; } }
+  .delivery-areas__status {
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 1.3; }
+    @media (min-width: 768px) {
+      .delivery-areas__status {
+        margin-bottom: 40px; } }
+  .delivery-areas__status--color--error {
+    color: #ec704b; }
+  .delivery-areas__status--color--success {
+    color: #a7c205; }
+  .delivery-areas__map {
+    height: 220px;
+    background-color: #eef3f3;
+    margin-bottom: 45px; }
+    @media (min-width: 768px) {
+      .delivery-areas__map {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        height: 260px;
+        margin-bottom: 0; } }
+  .delivery-areas__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    @media (min-width: 768px) {
+      .delivery-areas__form {
+        margin-bottom: 40px; } }
+  .delivery-areas__street {
+    width: 100%;
+    margin-bottom: 40px; }
+    @media (min-width: 768px) {
+      .delivery-areas__street {
+        width: calc(60% - 15px);
+        margin-bottom: 0; } }
+  .delivery-areas__house {
+    width: calc(50% - 10px); }
+    @media (min-width: 768px) {
+      .delivery-areas__house {
+        width: calc(20% - 15px); } }
+  .delivery-areas__flat {
+    width: calc(50% - 10px); }
+    @media (min-width: 768px) {
+      .delivery-areas__flat {
+        width: calc(20% - 15px); } }
