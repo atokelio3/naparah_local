@@ -1,0 +1,28 @@
+.bonus-payment {
+
+  &__title {
+    font-size: 1.143rem;
+    margin-bottom: 25px;
+  }
+
+  &__text-field {
+    margin-bottom: 20px;
+  }
+
+  &__info-text {
+    margin-bottom: 5px;
+    font-size: 0.8571rem;
+    color: $color-secondary--light;
+
+    span {
+      font-weight: 700;
+      color: $color-main;
+    }
+
+  }
+
+  &__info-text:last-child {
+    margin-bottom: 0;
+  }
+
+}

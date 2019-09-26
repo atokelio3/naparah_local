@@ -1,0 +1,106 @@
+.checkout-delivery {
+  padding: 20px;
+  background-color: $color-white;
+  box-shadow: $box-shadow;
+  overflow: hidden;
+
+  @media (min-width: $screen-md) {
+    padding: 50px;
+  }
+
+  &__radio {
+    margin-bottom: 50px;
+  }
+
+  &__radio-item {
+    margin-bottom: 20px;
+  }
+
+  &__radio-item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__dropdown {
+    margin-bottom: 40px;
+  }
+
+  &__map {
+    height: 220px;
+    background-color: $color-background;
+    margin-bottom: 45px;
+  }
+
+  &__address-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__street {
+    width: 100%;
+    margin-bottom: 35px;
+
+    .text-field__input {
+      padding-right: 30px;
+    }
+
+  }
+
+  &__geo-button {
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    width: 40px;
+    height: 35px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  &__geo-button:focus {
+    outline: none;
+  }
+
+  &__house {
+    width: calc(33% - 12px);
+  }
+
+  &__block {
+    width: calc(33% - 12px);
+  }
+
+  &__flat {
+    width: calc(33% - 12px);
+  }
+
+  &__comment {
+    margin-bottom: 40px;
+
+    .text-field__input {
+      resize: none;
+      padding: 0;
+    }
+
+  }
+
+  &__payment-method {
+
+    .dropdown__label {
+      margin-bottom: 15px;
+    }
+
+  }
+
+  &__divider {
+    margin-bottom: 40px;
+  }
+
+  &__bonus-payment {
+    margin-bottom: 40px;
+  }
+
+
+}

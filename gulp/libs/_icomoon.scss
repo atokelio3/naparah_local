@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon/icomoon.eot?qsef9z');
-  src:  url('../fonts/icomoon/icomoon.eot?qsef9z#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon/icomoon.ttf?qsef9z') format('truetype'),
-    url('../fonts/icomoon/icomoon.woff?qsef9z') format('woff'),
-    url('../fonts/icomoon/icomoon.svg?qsef9z#icomoon') format('svg');
+  src:  url('../fonts/icomoon/icomoon.eot?8nbvji');
+  src:  url('../fonts/icomoon/icomoon.eot?8nbvji#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?8nbvji') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?8nbvji') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?8nbvji#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-card:before {
+  content: "\e92f";
+  color: #005454;
+}
+.icon-cash:before {
+  content: "\e930";
+  color: #005454;
+}
+.icon-gps-fixed-indicator:before {
+  content: "\e931";
+  color: #96b230;
+}
 .icon-copy-file:before {
   content: "\e92e";
   color: #a7c205;

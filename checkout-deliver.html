@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>На Парах - Доставка</title>
+  <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body class="body">
+
+<div class="general-wrapper">
+  <div class="general-wrapper__content">
+    <div class="modal">
+      <div class="modal__dialog">
+        <button type="button" class="modal__close-button">
+          <span class="icon-close"></span>
+        </button>
+        <div class="modal__content">
+          <form action="#" class="login-form">
+            <div class="modal__title login-form__title">Вход</div>
+            <div class="text-field login-form__text-field">
+              <input type="text" class="text-field__input login-form__input" placeholder="Введите номер телефона">
+            </div>
+            <div class="text-field login-form__text-field login-form__verify-visible">
+              <input type="text" class="text-field__input login-form__input" placeholder="СМС-пароль">
+            </div>
+            <div class="login-form__text login-form__verify-hidden">
+              При входе вы <a href="#" class="link">соглашаетесь с уловиями</a>
+            </div>
+            <div class="login-form__text login-form__verify-visible">
+              Вам поступит звонок с кодом подтверждения через 3 минуты
+            </div>
+            <button class="button login-form__button-big login-form__verify-hidden">Отправить смс-пароль</button>
+            <button class="button login-form__button login-form__verify-visible">Войти</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__sidebar-switcher">
+        <div class="header__sidebar-switcher-opening-icon">
+          <span class="icon-menu"></span>
+        </div>
+        <div class="header__sidebar-switcher-closing-icon">
+          <span class="icon-close-round"></span>
+        </div>
+      </div>
+      <div class="header__sidebar-title">Меню</div>
+      <div class="center-wrapper">
+        <div class="header__content">
+          <a href="tel:+78126400506" class="header__phone">
+          <span class="header__phone-icon">
+            <span class="icon-phone"></span>
+          </span>
+            <span class="header__phone-text-block">
+            <span class="header__phone-title">Единый телефон:</span>
+            <span class="header__phone-number">+7 (812) <span>640-05-06</span></span>
+          </span>
+          </a>
+          <a href="#" class="header__logo">
+            <img src="static/img/logo_head.svg" alt="Logo">
+          </a>
+          <div class="header__search">
+            <button class="header__search-button">
+              <span class="icon-search"></span>
+            </button>
+            <div class="header__search-form">
+              <form class="search-form">
+                <label class="search-form__label">
+              <span class="search-form__icon">
+                <span class="icon-search"></span>
+              </span>
+                  <input type="text" class="search-form__input">
+                  <button type="button" class="search-form__close-button">
+                    <span class="icon-close"></span>
+                  </button>
+                </label>
+                <ul class="desc-ul search-form__autocomplete-list">
+                  <li class="desc-ul__item">
+                    <a href="#" class="desc-ul__link">
+                      <span class="desc-ul__item-title">Киноа с белыми грибами</span>
+                      <span class="desc-ul__item-desc">Гарниры и соусы</span>
+                    </a>
+                  </li>
+                  <li class="desc-ul__item">
+                    <a href="#" class="desc-ul__link">
+                      <span class="desc-ul__item-title">Ризотто с белыми грибами</span>
+                      <span class="desc-ul__item-desc">Горячие блюда</span>
+                    </a>
+                  </li>
+                  <li class="desc-ul__item">
+                    <a href="#" class="desc-ul__link">
+                      <span class="desc-ul__item-title">Сан-Пелегрино</span>
+                      <span class="desc-ul__item-desc">Освежающие напитки</span>
+                    </a>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+          <div class="header__user">
+            <button class="header__user-button">
+              <span class="header__user-icon"><span class="icon-user"></span></span>
+              <span class="header__user-name">Сергей</span>
+              <span class="header__user-drop-arrow"><span class="icon-arrow_dropdown"></span></span>
+            </button>
+            <ul class="ul header__user-dropdown">
+              <li class="ul__item">
+                <a href="#" class="ul__link">Профиль</a>
+              </li>
+              <li class="ul__item">
+                <a href="#" class="ul__link">Заказы</a>
+              </li>
+              <li class="ul__item">
+                <a href="#" class="ul__link">Выход</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="header__cart">
+            <span class="header__cart-icon"><span class="icon-cart"></span></span>
+            <span class="header__cart-amount">3 блюда - </span>
+            <span class="header__cart-price">356 &#8381;</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="sidebar">
+      <nav class="sidebar__mobile-nav">
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-menu1"></span></span>
+          <span class="sidebar__mobile-nav-text">Меню</span>
+        </a>
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-cart"></span></span>
+          <span class="sidebar__mobile-nav-text">Корзина</span>
+        </a>
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-history"></span></span>
+          <span class="sidebar__mobile-nav-text">Заказы</span>
+        </a>
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-profile"></span></span>
+          <span class="sidebar__mobile-nav-text">Профиль</span>
+        </a>
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-sign_out"></span></span>
+          <span class="sidebar__mobile-nav-text">Выход</span>
+        </a>
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-sign_in1"></span></span>
+          <span class="sidebar__mobile-nav-text">Вход</span>
+        </a>
+        <div class="sidebar__mobile-nav-divider">
+          <span class="sidebar__mobile-nav-divider-dash"></span><span
+            class="sidebar__mobile-nav-divider-dash"></span><span class="sidebar__mobile-nav-divider-dash"></span><span
+            class="sidebar__mobile-nav-divider-dash"></span><span class="sidebar__mobile-nav-divider-dash"></span><span
+            class="sidebar__mobile-nav-divider-dash"></span><span class="sidebar__mobile-nav-divider-dash"></span><span
+            class="sidebar__mobile-nav-divider-dash"></span><span class="sidebar__mobile-nav-divider-dash"></span><span
+            class="sidebar__mobile-nav-divider-dash"></span>
+        </div>
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-delivery"></span></span>
+          <span class="sidebar__mobile-nav-text">Условия доставки</span>
+        </a>
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-contact_us"></span></span>
+          <span class="sidebar__mobile-nav-text">Контакты</span>
+        </a>
+      </nav>
+      <div class="sidebar__desktop-nav-wrapper">
+        <nav class="sidebar__desktop-nav">
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon"><span class="icon-roast"></span></span>
+            <span class="sidebar__desktop-nav-text">Горячие блюда</span>
+          </a>
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon"><span class="icon-salads"></span></span>
+            <span class="sidebar__desktop-nav-text">Салаты</span>
+          </a>
+          <a href="#" class="sidebar__desktop-nav-item sidebar__desktop-nav-item--active">
+            <span class="sidebar__desktop-nav-icon"><span class="icon-soups"></span></span>
+            <span class="sidebar__desktop-nav-text">Супы</span>
+          </a>
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon"><span class="icon-burgers"></span></span>
+            <span class="sidebar__desktop-nav-text">Бургеры</span>
+          </a>
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon"><span class="icon-snacks"></span></span>
+            <span class="sidebar__desktop-nav-text">Закуски и хлеб</span>
+          </a>
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon"><span class="icon-dessert"></span></span>
+            <span class="sidebar__desktop-nav-text">Десерты</span>
+          </a>
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon"><span class="icon-garnish"></span></span>
+            <span class="sidebar__desktop-nav-text">Гарниры и соусы</span>
+          </a>
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon"><span class="icon-star"></span></span>
+            <span class="sidebar__desktop-nav-text">Блюда за баллы</span>
+          </a>
+          <div class="sidebar__desktop-nav-divider">
+            <span class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span>
+          </div>
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon"><span class="icon-delivery"></span></span>
+            <span class="sidebar__desktop-nav-text">Условия доставки</span>
+          </a>
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon"><span class="icon-contact_us"></span></span>
+            <span class="sidebar__desktop-nav-text">Контакты</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+    <div class="center-wrapper center-wrapper--content">
+      <div class="inner-container inner-container--xs">
+        <form action="#" class="checkout-delivery">
+          <div class="radio checkout-delivery__radio">
+            <label class="radio__item checkout-delivery__radio-item">Заберем из ресторана
+              <input class="radio__item-hidden" type="radio" name="radio">
+              <span class="radio__item-mark"></span>
+            </label>
+            <label class="radio__item checkout-delivery__radio-item">Доставка
+              <input class="radio__item-hidden" type="radio" checked="checked" name="radio">
+              <span class="radio__item-mark"></span>
+            </label>
+            <label class="radio__item checkout-delivery__radio-item">Поедим в ресторане
+              <input class="radio__item-hidden" type="radio" name="radio">
+              <span class="radio__item-mark"></span>
+            </label>
+          </div>
+          <div class="checkout-delivery__dropdown dropdown" onclick="this.classList.toggle('dropdown--open')">
+            <div class="dropdown__label">Время доставки:</div>
+            <div class="dropdown__filter">
+              <div class="dropdown__current-item">
+                Как можно быстрее
+                <div class="dropdown__arrow"><span class="icon-arrow_dropdown"></span></div>
+              </div>
+              <div class="dropdown__list-options">
+                <div class="dropdown__option">
+                  Как можно быстрее
+                </div>
+                <div class="dropdown__option">
+                  Вариант-2
+                </div>
+                <div class="dropdown__option">
+                  Вариант-3
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkout-delivery__dropdown dropdown" onclick="this.classList.toggle('dropdown--open')">
+            <div class="dropdown__label">Количество приборов:</div>
+            <div class="dropdown__filter">
+              <div class="dropdown__current-item">
+                1
+                <div class="dropdown__arrow"><span class="icon-arrow_dropdown"></span></div>
+              </div>
+              <div class="dropdown__list-options">
+                <div class="dropdown__option">
+                  1
+                </div>
+                <div class="dropdown__option">
+                  2
+                </div>
+                <div class="dropdown__option">
+                  3
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkout-delivery__map"></div>
+          <div class="checkout-delivery__address-group">
+            <div class="checkout-delivery__street text-field text-field--error">
+              <input type="text" class="text-field__input" placeholder="Улица">
+              <span class="text-field__error-message">Заполните поле!</span>
+              <button type="button" class="checkout-delivery__geo-button">
+                <span class="icon-gps-fixed-indicator"></span>
+              </button>
+            </div>
+            <div class="checkout-delivery__house text-field">
+              <input type="text" class="text-field__input" placeholder="Дом">
+            </div>
+            <div class="checkout-delivery__block text-field">
+              <input type="text" class="text-field__input" placeholder="Корпус">
+            </div>
+            <div class="checkout-delivery__flat text-field">
+              <input type="text" class="text-field__input" placeholder="Кв./Офис">
+            </div>
+          </div>
+          <div class="checkout-delivery__dropdown checkout-delivery__payment-method dropdown dropdown--icon" onclick="this.classList.toggle('dropdown--open')">
+            <div class="dropdown__label">Способ оплаты:</div>
+            <div class="dropdown__filter">
+              <div class="dropdown__current-item">
+                <div class="dropdown__icon"><span class="icon-cash"></span></div>
+                Наличными
+                <div class="dropdown__arrow"><span class="icon-arrow_dropdown"></span></div>
+              </div>
+              <div class="dropdown__list-options">
+                <div class="dropdown__option">
+                  <div class="dropdown__icon"><span class="icon-cash"></span></div>
+                  Наличными
+                </div>
+                <div class="dropdown__option">
+                  <div class="dropdown__icon"><span class="icon-card"></span></div>
+                  Картой
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkout-delivery__comment text-field">
+            <textarea name="#" class="text-field__input" placeholder="Комментарий"></textarea>
+          </div>
+          <div class="checkout-delivery__divider divider"></div>
+          <div class="checkout-delivery__bonus-payment bonus-payment">
+            <div class="bonus-payment__title">Оплата бонусными баллами:</div>
+            <div class="text-field bonus-payment__text-field">
+              <input type="text" class="text-field__input" placeholder="Кол-во баллов для списания">
+            </div>
+            <div class="bonus-payment__info">
+              <div class="bonus-payment__info-text">Максимальное количество  бонусных баллов к списанию: <span>342</span></div>
+              <div class="bonus-payment__info-text">У вас бонусных баллов: <span>160</span></div>
+            </div>
+          </div>
+          <div class="checkout-delivery__divider divider"></div>
+          <div class="price-button-wrapper">
+            <div class="price-button-wrapper__price">
+              <span class="price-button-wrapper__title">Итого:</span>
+              <span class="price-button-wrapper__value">460 <span>&#8381;</span></span>
+            </div>
+            <button type="button" class="button button--disable price-button-wrapper__button">Оформить заказ</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="general-wrapper__footer footer">
+    <div class="center-wrapper">
+      <div class="footer__content">
+        <a href="#" class="footer__logo">
+          <img src="static/img/logo_footer.svg" alt="Logo">
+        </a>
+        <div class="footer__social">
+          <a href="#" target="_blank" class="footer__social-item"><span class="icon-vk"></span></a>
+          <a href="#" target="_blank" class="footer__social-item"><span class="icon-instagram"></span></a>
+        </div>
+        <div class="footer__text-copyright">
+          Copyright &copy; Кафе "На Парах" <span>2010-2019</span>
+        </div>
+        <div class="footer__agreement-link-wrapper">
+          <a href="#" class="footer__agreement-link">Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="static/js/main.js"></script>
+</body>
+</html>
