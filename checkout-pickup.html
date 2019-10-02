@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>На Парах - Доставка</title>
+  <title>На Парах - Забрать из ресторана</title>
   <link rel="stylesheet" href="static/css/main.css">
 </head>
 <body class="body">
@@ -227,54 +227,53 @@
     </div>
     <div class="center-wrapper center-wrapper--content">
       <div class="inner-container inner-container--xs">
-        <form action="#" class="checkout-delivery">
-          <div class="radio checkout-delivery__radio">
-            <label class="radio__item checkout-delivery__radio-item">Заберем из ресторана
-              <input class="radio__item-hidden" type="radio" name="radio">
-              <span class="radio__item-mark"></span>
-            </label>
-            <label class="radio__item checkout-delivery__radio-item">Доставка
+        <form action="#" class="checkout-pickup">
+          <div class="radio checkout-pickup__radio">
+            <label class="radio__item checkout-pickup__radio-item">Заберем из ресторана
               <input class="radio__item-hidden" type="radio" checked="checked" name="radio">
               <span class="radio__item-mark"></span>
             </label>
-            <label class="radio__item checkout-delivery__radio-item">Поедим в ресторане
+            <label class="radio__item checkout-pickup__radio-item">Доставка
+              <input class="radio__item-hidden" type="radio" name="radio">
+              <span class="radio__item-mark"></span>
+            </label>
+            <label class="radio__item checkout-pickup__radio-item">Поедим в ресторане
               <input class="radio__item-hidden" type="radio" name="radio">
               <span class="radio__item-mark"></span>
             </label>
           </div>
-          <div class="checkout-delivery__dropdown dropdown" onclick="this.classList.toggle('dropdown--open')">
-            <div class="dropdown__label">Время доставки:</div>
+          <div class="checkout-pickup__restaurant-choice dropdown" onclick="this.classList.toggle('dropdown--open')">
+            <div class="dropdown__label">Ресторан:</div>
             <div class="dropdown__filter">
               <div class="dropdown__current-item">
-                Как можно быстрее
+                Бульвар Новаторов, д. 11 к2
                 <div class="dropdown__arrow"><span class="icon-arrow_dropdown"></span></div>
               </div>
               <div class="dropdown__list-options">
                 <div class="dropdown__option">
-                  Как можно быстрее
+                  Бульвар Новаторов, д. 11 к2
                 </div>
                 <div class="dropdown__option">
-                  Вариант-2
+                  улица Марата, 16
                 </div>
                 <div class="dropdown__option">
-                  Вариант-3
+                  Большой проспект ПС, 3
                 </div>
                 <div class="dropdown__option">
-                  Вариант-4
-                </div>
-                <div class="dropdown__option">
-                  Вариант-5
-                </div>
-                <div class="dropdown__option">
-                  Вариант-6
-                </div>
-                <div class="dropdown__option">
-                  Вариант-7
+                  7-я линия Васильевского острова, 24
                 </div>
               </div>
             </div>
           </div>
-          <div class="checkout-delivery__dropdown dropdown" onclick="this.classList.toggle('dropdown--open')">
+          <label class="checkout-pickup__restaurant-remember checkbox checkbox--sm">
+            Запомнить ресторан как основной
+            <input type="checkbox" class="checkbox__hidden">
+            <span class="checkbox__mark"></span>
+          </label>
+          <div class="checkout-pickup__time">
+
+          </div>
+          <div class="checkout-pickup__dropdown dropdown" onclick="this.classList.toggle('dropdown--open')">
             <div class="dropdown__label">Количество приборов:</div>
             <div class="dropdown__filter">
               <div class="dropdown__current-item">
@@ -294,26 +293,8 @@
               </div>
             </div>
           </div>
-          <div class="checkout-delivery__map"></div>
-          <div class="checkout-delivery__address-group">
-            <div class="checkout-delivery__street text-field text-field--error">
-              <input type="text" class="text-field__input" placeholder="Улица">
-              <span class="text-field__error-message">Заполните поле!</span>
-              <button type="button" class="checkout-delivery__geo-button">
-                <span class="icon-gps-fixed-indicator"></span>
-              </button>
-            </div>
-            <div class="checkout-delivery__house text-field">
-              <input type="text" class="text-field__input" placeholder="Дом">
-            </div>
-            <div class="checkout-delivery__block text-field">
-              <input type="text" class="text-field__input" placeholder="Корпус">
-            </div>
-            <div class="checkout-delivery__flat text-field">
-              <input type="text" class="text-field__input" placeholder="Кв./Офис">
-            </div>
-          </div>
-          <div class="checkout-delivery__dropdown checkout-delivery__payment-method dropdown dropdown--icon" onclick="this.classList.toggle('dropdown--open')">
+          <div class="checkout-pickup__dropdown checkout-pickup__payment-method dropdown dropdown--icon"
+               onclick="this.classList.toggle('dropdown--open')">
             <div class="dropdown__label">Способ оплаты:</div>
             <div class="dropdown__filter">
               <div class="dropdown__current-item">
@@ -333,11 +314,16 @@
               </div>
             </div>
           </div>
-          <div class="checkout-delivery__comment text-field">
+          <div class="checkout-pickup__comment text-field">
             <textarea name="#" class="text-field__input" placeholder="Комментарий"></textarea>
           </div>
-          <div class="checkout-delivery__divider divider"></div>
-          <div class="checkout-delivery__bonus-payment bonus-payment">
+          <label class="checkout-pickup__control-call checkbox checkbox--sm">
+            Не звонить для проверки заказа
+            <input type="checkbox" class="checkbox__hidden">
+            <span class="checkbox__mark"></span>
+          </label>
+          <div class="checkout-pickup__divider divider"></div>
+          <div class="checkout-pickup__bonus-payment bonus-payment">
             <div class="bonus-payment__title">Оплата бонусными баллами:</div>
             <div class="text-field bonus-payment__text-field">
               <input type="text" class="text-field__input" placeholder="Кол-во баллов для списания">
@@ -347,7 +333,7 @@
               <div class="bonus-payment__info-text">У вас бонусных баллов: <span>160</span></div>
             </div>
           </div>
-          <div class="checkout-delivery__divider divider"></div>
+          <div class="checkout-pickup__divider divider"></div>
           <div class="price-button-wrapper">
             <div class="price-button-wrapper__price">
               <span class="price-button-wrapper__title">Итого:</span>

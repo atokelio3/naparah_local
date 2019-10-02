@@ -456,6 +456,12 @@ a {
   .checkbox__hidden:checked ~ .checkbox__mark:after {
     display: block; }
 
+.checkbox--sm {
+  padding-left: 30px;
+  font-size: 0.8571rem; }
+  .checkbox--sm .checkbox__mark {
+    top: -2px; }
+
 .radio__item {
   display: block;
   position: relative;
@@ -2522,4 +2528,39 @@ a {
   .checkout-delivery__divider {
     margin-bottom: 40px; }
   .checkout-delivery__bonus-payment {
+    margin-bottom: 40px; }
+
+.checkout-pickup {
+  padding: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .checkout-pickup {
+      padding: 50px; } }
+  .checkout-pickup__radio {
+    margin-bottom: 50px; }
+  .checkout-pickup__radio-item {
+    margin-bottom: 20px; }
+  .checkout-pickup__radio-item:last-child {
+    margin-bottom: 0; }
+  .checkout-pickup__restaurant-choice {
+    margin-bottom: 25px; }
+  .checkout-pickup__restaurant-remember {
+    margin-bottom: 50px; }
+  .checkout-pickup__dropdown {
+    margin-bottom: 40px; }
+  .checkout-pickup__comment {
+    margin-bottom: 40px; }
+    .checkout-pickup__comment .text-field__input {
+      resize: none;
+      padding: 0; }
+  .checkout-pickup__payment-method .dropdown__label {
+    margin-bottom: 15px; }
+  .checkout-pickup__divider {
+    margin-bottom: 40px; }
+  .checkout-pickup__bonus-payment {
+    margin-bottom: 40px; }
+  .checkout-pickup__control-call {
     margin-bottom: 40px; }

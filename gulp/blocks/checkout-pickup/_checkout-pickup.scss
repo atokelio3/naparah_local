@@ -1,0 +1,66 @@
+.checkout-pickup {
+  padding: 20px;
+  background-color: $color-white;
+  box-shadow: $box-shadow;
+  overflow: hidden;
+
+  @media (min-width: $screen-md) {
+    padding: 50px;
+  }
+
+  &__radio {
+    margin-bottom: 50px;
+  }
+
+  &__radio-item {
+    margin-bottom: 20px;
+  }
+
+  &__radio-item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__restaurant-choice {
+    margin-bottom: 25px;
+  }
+
+  &__restaurant-remember {
+    margin-bottom: 50px;
+  }
+
+  &__dropdown {
+    margin-bottom: 40px;
+  }
+
+  &__comment {
+    margin-bottom: 40px;
+
+    .text-field__input {
+      resize: none;
+      padding: 0;
+    }
+
+  }
+
+  &__payment-method {
+
+    .dropdown__label {
+      margin-bottom: 15px;
+    }
+
+  }
+
+  &__divider {
+    margin-bottom: 40px;
+  }
+
+  &__bonus-payment {
+    margin-bottom: 40px;
+  }
+
+  &__control-call {
+    margin-bottom: 40px;
+  }
+
+
+}
