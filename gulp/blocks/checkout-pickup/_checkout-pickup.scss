@@ -62,5 +62,43 @@
     margin-bottom: 40px;
   }
 
+  &__time-container {
+    margin-bottom: 25px;
+  }
+
+  &__time-title {
+    margin-right: 30px;
+    font-size: $font-size;
+    color: $color-secondary;
+  }
+
+  &__time-container {
+    display: flex;
+    align-items: center;
+
+    .dropdown {
+      width: 100px;
+    }
+
+    .dropdown__current-item {
+      padding-left: 30px;
+    }
+
+    .dropdown__arrow {
+      top: 18px;
+    }
+
+    .dropdown__list-options {
+      padding-top: 80px;
+    }
+
+  }
+
+  &__time-icon {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    font-size: 18px;
+  }
 
 }

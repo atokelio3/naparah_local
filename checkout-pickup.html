@@ -270,9 +270,34 @@
             <input type="checkbox" class="checkbox__hidden">
             <span class="checkbox__mark"></span>
           </label>
-          <div class="checkout-pickup__time">
-
+          <div class="checkout-pickup__time-container">
+            <div class="checkout-pickup__time-title">Время</div>
+            <div class="dropdown" onclick="this.classList.toggle('dropdown--open')">
+              <div class="dropdown__filter">
+                <div class="dropdown__current-item">
+                  <div class=checkout-pickup__time-icon><span class="icon-clock"></span></div>
+                  10:00
+                  <div class="dropdown__arrow"><span class="icon-arrow_dropdown"></span></div>
+                </div>
+                <div class="dropdown__list-options">
+                  <div class="dropdown__option">
+                    11:00
+                  </div>
+                  <div class="dropdown__option">
+                    12:00
+                  </div>
+                  <div class="dropdown__option">
+                    13:00
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <label class="checkout-pickup__control-call checkbox checkbox--sm">
+            Не звонить для проверки заказа
+            <input type="checkbox" class="checkbox__hidden">
+            <span class="checkbox__mark"></span>
+          </label>
           <div class="checkout-pickup__dropdown dropdown" onclick="this.classList.toggle('dropdown--open')">
             <div class="dropdown__label">Количество приборов:</div>
             <div class="dropdown__filter">
@@ -317,11 +342,6 @@
           <div class="checkout-pickup__comment text-field">
             <textarea name="#" class="text-field__input" placeholder="Комментарий"></textarea>
           </div>
-          <label class="checkout-pickup__control-call checkbox checkbox--sm">
-            Не звонить для проверки заказа
-            <input type="checkbox" class="checkbox__hidden">
-            <span class="checkbox__mark"></span>
-          </label>
           <div class="checkout-pickup__divider divider"></div>
           <div class="checkout-pickup__bonus-payment bonus-payment">
             <div class="bonus-payment__title">Оплата бонусными баллами:</div>
