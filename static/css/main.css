@@ -461,6 +461,8 @@ a {
   font-size: 0.8571rem; }
   .checkbox--sm .checkbox__mark {
     top: -2px; }
+  .checkbox--sm .checkbox__mark:after {
+    top: 2px; }
 
 .radio__item {
   display: block;
@@ -630,6 +632,9 @@ a {
     -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     cursor: pointer; }
+  .dropdown__list-options-inner {
+    max-height: 173px;
+    overflow-y: auto; }
   .dropdown__option {
     padding: 13px 15px;
     font-size: 1rem;
