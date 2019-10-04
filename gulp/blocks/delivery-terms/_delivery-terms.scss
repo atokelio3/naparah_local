@@ -1,0 +1,122 @@
+.delivery-terms {
+
+
+  &__title {
+    margin-bottom: 25px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 35px;
+    }
+
+  }
+
+  &__content {
+    padding: 50px 20px;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+  }
+
+  &__text {
+    max-width: 645px;
+    margin-bottom: 45px;
+    font-size: $font-size;
+    line-height: 1.7;
+    color: $color-secondary;
+
+    @media (min-width: $screen-md) {
+      font-size: 1.143rem;
+      margin-bottom: 55px;
+    }
+
+  }
+
+  &__areas-title {
+    margin-bottom: 20px;
+    font-size: 1.143rem;
+    font-weight: 700;
+    color: $color-secondary;
+
+  }
+
+  &__areas-desc {
+    margin-bottom: 55px;
+
+    .delivery-terms__areas-title {
+      display: none;
+    }
+
+  }
+
+  &__areas-map {
+    height: 240px;
+    background-color: $color-background--dark;
+    margin-right: -20px;
+    margin-left: -20px;
+    margin-bottom: 25px;
+  }
+
+  &__areas-list {
+    list-style: none;
+    margin: 0 0 25px;
+    padding: 0;
+  }
+
+  &__areas-list-item {
+    margin-bottom: 18px;
+    font-size: $font-size;
+    color: $color-secondary;
+  }
+
+  &__areas-list-item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.7143rem;
+
+    @media (min-width: $screen-md) {
+      width: unset;
+      font-size: 0.8571rem;
+    }
+
+  }
+
+  &__info-item {
+    margin-bottom: 47px;
+  }
+
+  &__info-item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__info-item-icon {
+    margin-bottom: 25px;
+    font-size: 25px;
+
+    span:before {
+      color: $color-main;
+    }
+
+  }
+
+  &__info-item-title {
+    margin-bottom: 25px;
+    font-size: 1.143rem;
+    font-weight: 700;
+    color: $color-secondary;
+  }
+
+  &__info-item-text {
+    margin-bottom: 15px;
+    font-size: $font-size;
+    color: $color-secondary;
+  }
+
+  &__info-item-text:last-child {
+    margin-bottom: 0;
+  }
+
+}

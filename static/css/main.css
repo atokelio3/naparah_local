@@ -855,7 +855,7 @@ a {
 
 .main-title {
   font-size: 1.714rem;
-  line-height: 1;
+  line-height: 1.25;
   color: #3d5b5a;
   font-weight: 700;
   text-transform: uppercase;
@@ -1772,6 +1772,7 @@ a {
         margin-right: 15px; } }
   .page-header__desc {
     font-size: 1.143rem;
+    line-height: 1.65;
     color: #92b3b2; }
 
 .page-header--between {
@@ -2595,3 +2596,93 @@ a {
     left: 0;
     top: 13px;
     font-size: 18px; }
+
+.delivery-terms__title {
+  margin-bottom: 25px; }
+  @media (min-width: 768px) {
+    .delivery-terms__title {
+      margin-bottom: 35px; } }
+
+.delivery-terms__content {
+  padding: 50px 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+
+.delivery-terms__text {
+  max-width: 645px;
+  margin-bottom: 45px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #3d5b5a; }
+  @media (min-width: 768px) {
+    .delivery-terms__text {
+      font-size: 1.143rem;
+      margin-bottom: 55px; } }
+
+.delivery-terms__areas-title {
+  margin-bottom: 20px;
+  font-size: 1.143rem;
+  font-weight: 700;
+  color: #3d5b5a; }
+
+.delivery-terms__areas-desc {
+  margin-bottom: 55px; }
+  .delivery-terms__areas-desc .delivery-terms__areas-title {
+    display: none; }
+
+.delivery-terms__areas-map {
+  height: 240px;
+  background-color: #e7efee;
+  margin-right: -20px;
+  margin-left: -20px;
+  margin-bottom: 25px; }
+
+.delivery-terms__areas-list {
+  list-style: none;
+  margin: 0 0 25px;
+  padding: 0; }
+
+.delivery-terms__areas-list-item {
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #3d5b5a; }
+
+.delivery-terms__areas-list-item:last-child {
+  margin-bottom: 0; }
+
+.delivery-terms__button {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.7143rem; }
+  @media (min-width: 768px) {
+    .delivery-terms__button {
+      width: unset;
+      font-size: 0.8571rem; } }
+
+.delivery-terms__info-item {
+  margin-bottom: 47px; }
+
+.delivery-terms__info-item:last-child {
+  margin-bottom: 0; }
+
+.delivery-terms__info-item-icon {
+  margin-bottom: 25px;
+  font-size: 25px; }
+  .delivery-terms__info-item-icon span:before {
+    color: #a7c205; }
+
+.delivery-terms__info-item-title {
+  margin-bottom: 25px;
+  font-size: 1.143rem;
+  font-weight: 700;
+  color: #3d5b5a; }
+
+.delivery-terms__info-item-text {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #3d5b5a; }
+
+.delivery-terms__info-item-text:last-child {
+  margin-bottom: 0; }
