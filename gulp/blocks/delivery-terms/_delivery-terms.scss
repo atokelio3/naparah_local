@@ -1,6 +1,5 @@
 .delivery-terms {
 
-
   &__title {
     margin-bottom: 25px;
 
@@ -14,10 +13,19 @@
     padding: 50px 20px;
     background-color: $color-white;
     box-shadow: $box-shadow;
+
+    @media (min-width: $screen-md) {
+      padding: 50px 40px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding: 65px 60px;
+    }
+
   }
 
   &__text {
-    max-width: 645px;
+    max-width: 650px;
     margin-bottom: 45px;
     font-size: $font-size;
     line-height: 1.7;
@@ -30,19 +38,43 @@
 
   }
 
+  &__areas {
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      margin-bottom: 60px;
+    }
+
+  }
+
   &__areas-title {
     margin-bottom: 20px;
     font-size: 1.143rem;
     font-weight: 700;
     color: $color-secondary;
 
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+
   }
 
   &__areas-desc {
     margin-bottom: 55px;
 
+    @media (min-width: $screen-lg) {
+      min-width: 300px;
+      margin-bottom: 0;
+      margin-right: 35px;
+    }
+
     .delivery-terms__areas-title {
       display: none;
+
+      @media (min-width: $screen-lg) {
+        display: block;
+      }
+
     }
 
   }
@@ -53,6 +85,20 @@
     margin-right: -20px;
     margin-left: -20px;
     margin-bottom: 25px;
+
+    @media (min-width: $screen-md) {
+      margin-right: -40px;
+      margin-left: -40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      order: 1;
+      max-width: 640px;
+      width: 100%;
+      height: unset;
+      margin: 0;
+    }
+
   }
 
   &__areas-list {
@@ -79,13 +125,33 @@
 
     @media (min-width: $screen-md) {
       width: unset;
+      padding: 10px 20px;
       font-size: 0.8571rem;
+    }
+
+  }
+
+  &__info {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
     }
 
   }
 
   &__info-item {
     margin-bottom: 47px;
+
+    @media (min-width: $screen-md) {
+      width: 50%;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 33.33%;
+      margin-bottom: 0;
+    }
+
   }
 
   &__info-item:last-child {

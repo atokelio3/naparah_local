@@ -2608,9 +2608,15 @@ a {
   background-color: #fff;
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+  @media (min-width: 768px) {
+    .delivery-terms__content {
+      padding: 50px 40px; } }
+  @media (min-width: 1200px) {
+    .delivery-terms__content {
+      padding: 65px 60px; } }
 
 .delivery-terms__text {
-  max-width: 645px;
+  max-width: 650px;
   margin-bottom: 45px;
   font-size: 14px;
   line-height: 1.7;
@@ -2620,16 +2626,34 @@ a {
       font-size: 1.143rem;
       margin-bottom: 55px; } }
 
+@media (min-width: 992px) {
+  .delivery-terms__areas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 60px; } }
+
 .delivery-terms__areas-title {
   margin-bottom: 20px;
   font-size: 1.143rem;
   font-weight: 700;
   color: #3d5b5a; }
+  @media (min-width: 992px) {
+    .delivery-terms__areas-title {
+      display: none; } }
 
 .delivery-terms__areas-desc {
   margin-bottom: 55px; }
+  @media (min-width: 992px) {
+    .delivery-terms__areas-desc {
+      min-width: 300px;
+      margin-bottom: 0;
+      margin-right: 35px; } }
   .delivery-terms__areas-desc .delivery-terms__areas-title {
     display: none; }
+    @media (min-width: 992px) {
+      .delivery-terms__areas-desc .delivery-terms__areas-title {
+        display: block; } }
 
 .delivery-terms__areas-map {
   height: 240px;
@@ -2637,6 +2661,19 @@ a {
   margin-right: -20px;
   margin-left: -20px;
   margin-bottom: 25px; }
+  @media (min-width: 768px) {
+    .delivery-terms__areas-map {
+      margin-right: -40px;
+      margin-left: -40px; } }
+  @media (min-width: 992px) {
+    .delivery-terms__areas-map {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      max-width: 640px;
+      width: 100%;
+      height: unset;
+      margin: 0; } }
 
 .delivery-terms__areas-list {
   list-style: none;
@@ -2659,10 +2696,26 @@ a {
   @media (min-width: 768px) {
     .delivery-terms__button {
       width: unset;
+      padding: 10px 20px;
       font-size: 0.8571rem; } }
+
+@media (min-width: 768px) {
+  .delivery-terms__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
 
 .delivery-terms__info-item {
   margin-bottom: 47px; }
+  @media (min-width: 768px) {
+    .delivery-terms__info-item {
+      width: 50%; } }
+  @media (min-width: 992px) {
+    .delivery-terms__info-item {
+      width: 33.33%;
+      margin-bottom: 0; } }
 
 .delivery-terms__info-item:last-child {
   margin-bottom: 0; }
