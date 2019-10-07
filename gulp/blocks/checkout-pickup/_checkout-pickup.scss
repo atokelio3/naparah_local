@@ -25,7 +25,7 @@
   }
 
   &__restaurant-remember {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   &__dropdown {
@@ -73,24 +73,22 @@
   }
 
   &__time-container {
-    display: flex;
-    align-items: center;
 
-    .dropdown {
-      width: 100px;
-    }
+    //.dropdown {
+    //  width: 100px;
+    //}
 
     .dropdown__current-item {
       padding-left: 30px;
     }
 
-    .dropdown__arrow {
-      top: 18px;
-    }
-
-    .dropdown__list-options {
-      padding-top: 80px;
-    }
+    //.dropdown__arrow {
+    //  top: 18px;
+    //}
+    //
+    //.dropdown__list-options {
+    //  padding-top: 80px;
+    //}
 
   }
 

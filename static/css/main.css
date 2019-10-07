@@ -2560,7 +2560,7 @@ a {
   .checkout-pickup__restaurant-choice {
     margin-bottom: 25px; }
   .checkout-pickup__restaurant-remember {
-    margin-bottom: 50px; }
+    margin-bottom: 40px; }
   .checkout-pickup__dropdown {
     margin-bottom: 40px; }
   .checkout-pickup__comment {
@@ -2582,21 +2582,8 @@ a {
     margin-right: 30px;
     font-size: 14px;
     color: #3d5b5a; }
-  .checkout-pickup__time-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .checkout-pickup__time-container .dropdown {
-      width: 100px; }
-    .checkout-pickup__time-container .dropdown__current-item {
-      padding-left: 30px; }
-    .checkout-pickup__time-container .dropdown__arrow {
-      top: 18px; }
-    .checkout-pickup__time-container .dropdown__list-options {
-      padding-top: 80px; }
+  .checkout-pickup__time-container .dropdown__current-item {
+    padding-left: 30px; }
   .checkout-pickup__time-icon {
     position: absolute;
     left: 0;
