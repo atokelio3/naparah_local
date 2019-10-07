@@ -1,8 +1,8 @@
 /* libs */
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot?8nbvji");
-  src: url("../fonts/icomoon/icomoon.eot?8nbvji#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?8nbvji") format("truetype"), url("../fonts/icomoon/icomoon.woff?8nbvji") format("woff"), url("../fonts/icomoon/icomoon.svg?8nbvji#icomoon") format("svg");
+  src: url("../fonts/icomoon/icomoon.eot?4re06j");
+  src: url("../fonts/icomoon/icomoon.eot?4re06j#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?4re06j") format("truetype"), url("../fonts/icomoon/icomoon.woff?4re06j") format("woff"), url("../fonts/icomoon/icomoon.svg?4re06j#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
@@ -19,6 +19,12 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-file:before {
+  content: "\e932"; }
+
+.icon-wallet:before {
+  content: "\e933"; }
 
 .icon-card:before {
   content: "\e92f";
@@ -2646,7 +2652,7 @@ a {
   margin-bottom: 55px; }
   @media (min-width: 992px) {
     .delivery-terms__areas-desc {
-      min-width: 300px;
+      min-width: 340px;
       margin-bottom: 0;
       margin-right: 35px; } }
   .delivery-terms__areas-desc .delivery-terms__areas-title {
@@ -2716,6 +2722,13 @@ a {
     .delivery-terms__info-item {
       width: 33.33%;
       margin-bottom: 0; } }
+  @media (min-width: 1200px) {
+    .delivery-terms__info-item {
+      padding-left: 38px; } }
+
+@media (min-width: 1200px) {
+  .delivery-terms__info-item:first-child {
+    padding-left: 0; } }
 
 .delivery-terms__info-item:last-child {
   margin-bottom: 0; }
