@@ -1,0 +1,106 @@
+.contacts {
+
+  &__title {
+    margin-bottom: 25px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 40px;
+    }
+
+  }
+
+  &__content-top {
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+  }
+
+  &__map {
+    height: 210px;
+    background-color: $color-background--dark;
+
+    @media (min-width: $screen-md) {
+      height: 300px;
+    }
+
+  }
+
+  &__info {
+    padding: 40px 20px 0;
+
+    @media (min-width: $screen-md) {
+      padding: 55px 55px 0;
+    }
+
+  }
+
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+      align-items: flex-end;
+      margin-bottom: 60px;
+    }
+
+  }
+
+  &__phone-label {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: $color-secondary--lighten;
+
+    @media (min-width: $screen-md) {
+      margin-right: 15px;
+      margin-bottom: 2px;
+      font-size: 0.8571rem;
+    }
+
+  }
+
+  &__phone-link {
+    font-size: 1.571rem;
+    font-weight: 700;
+    color: $color-secondary;
+    transition: color 0.3s;
+
+    @media (min-width: $screen-md) {
+      font-size: 1.143rem;
+    }
+
+  }
+
+  &__phone-link:hover {
+    color: $color-main;
+  }
+
+  &__address-list {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .address {
+      padding-bottom: 40px;
+
+      @media (min-width: $screen-md) {
+        width: 50%;
+        padding-bottom: 55px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 33%;
+      }
+
+      @media (min-width: $screen-xl) {
+        width: 25%;
+      }
+
+    }
+
+  }
+
+
+}
