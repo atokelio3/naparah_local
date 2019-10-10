@@ -1,0 +1,71 @@
+.follow-us {
+  padding: 45px 0 50px;
+  background-color: $color-background--lighten;
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 1.143rem;
+    color: $color-secondary;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    span {
+      display: block;
+      font-size: 2.143rem;
+    }
+
+  }
+
+  &__photos-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__photo {
+    width: calc(50% - 7.5px);
+    height: 130px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    @media (min-width: 576px) {
+      height: 200px;
+    }
+
+    @media (min-width: 768px) {
+      width: calc(33.33% - 10px);
+
+      &:nth-child(2n) {
+        margin-right: 15px;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+    }
+
+    @media (min-width: 1200px) {
+      width: calc(20% - 12px);
+
+      &:nth-child(3n) {
+        margin-right: 15px;
+      }
+
+      &:nth-child(5n) {
+        margin-right: 0;
+      }
+
+    }
+
+
+    
+  }
+
+}

@@ -2985,3 +2985,49 @@ a {
   @media (min-width: 1200px) {
     .contacts__address-list .address {
       width: 25%; } }
+
+.follow-us {
+  padding: 45px 0 50px;
+  background-color: #e4f0f0; }
+  .follow-us__title {
+    margin-bottom: 30px;
+    font-size: 1.143rem;
+    color: #3d5b5a;
+    font-weight: 700;
+    text-transform: uppercase; }
+    .follow-us__title span {
+      display: block;
+      font-size: 2.143rem; }
+  .follow-us__photos-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .follow-us__photo {
+    width: calc(50% - 7.5px);
+    height: 130px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    .follow-us__photo:nth-child(2n) {
+      margin-right: 0; }
+    @media (min-width: 576px) {
+      .follow-us__photo {
+        height: 200px; } }
+    @media (min-width: 768px) {
+      .follow-us__photo {
+        width: calc(33.33% - 10px); }
+        .follow-us__photo:nth-child(2n) {
+          margin-right: 15px; }
+        .follow-us__photo:nth-child(3n) {
+          margin-right: 0; } }
+    @media (min-width: 1200px) {
+      .follow-us__photo {
+        width: calc(20% - 12px); }
+        .follow-us__photo:nth-child(3n) {
+          margin-right: 15px; }
+        .follow-us__photo:nth-child(5n) {
+          margin-right: 0; } }
