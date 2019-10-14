@@ -1,5 +1,11 @@
 .radio {
 
+  &__title {
+    font-size: 1.143rem;
+    font-weight: 700;
+    color: $color-secondary;
+  }
+
   &__item {
     display: block;
     position: relative;
@@ -42,6 +48,15 @@
 
   &__item-hidden:checked ~ .radio__item-mark:after {
     display: block;
+  }
+
+  &__desc-item {
+
+    span {
+      font-size: 0.8571rem;
+      color: $color-secondary--light;
+    }
+
   }
 
 }

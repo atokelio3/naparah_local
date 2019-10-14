@@ -1,0 +1,49 @@
+.constructor {
+
+  &__divider {
+    margin-bottom: 30px;
+  }
+
+  &__radio {
+    margin-bottom: 30px;
+
+    .radio__title {
+      margin-bottom: 25px;
+    }
+
+    .radio__item {
+      margin-bottom: 15px;
+    }
+
+    .radio__item:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__food-switcher {
+    margin-bottom: 25px;
+  }
+
+  &__food-switcher:last-child {
+    margin-bottom: 0;
+  }
+
+  &__price {
+    font-size: 0.8571rem;
+    color: $color-secondary--light;
+    margin-bottom: 20px;
+
+    .constructor__price-big {
+      font-size: 1.143rem;
+      font-weight: 700;
+
+      span {
+        font-size: 1rem;
+      }
+
+    }
+
+  }
+
+}

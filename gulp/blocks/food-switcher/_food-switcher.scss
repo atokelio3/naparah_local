@@ -1,0 +1,39 @@
+.food-switcher {
+
+  &__title {
+    font-size: 1rem;
+    color: $color-secondary;
+
+    @media (min-width: 992px) {
+      max-width: 270px;
+    }
+
+  }
+
+  &__price {
+    font-size: 1.143rem;
+    font-weight: 700;
+    color: $color-secondary;
+
+    span {
+      font-size: 1rem;
+    }
+
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .amount-switcher {
+
+    @media (min-width: 992px) {
+      position: relative;
+      top: -14px;
+    }
+
+  }
+
+}

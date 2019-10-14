@@ -561,6 +561,11 @@ a {
   .checkbox--sm .checkbox__mark:after {
     top: 2px; }
 
+.radio__title {
+  font-size: 1.143rem;
+  font-weight: 700;
+  color: #3d5b5a; }
+
 .radio__item {
   display: block;
   position: relative;
@@ -603,6 +608,10 @@ a {
 
 .radio__item-hidden:checked ~ .radio__item-mark:after {
   display: block; }
+
+.radio__desc-item span {
+  font-size: 0.8571rem;
+  color: #709594; }
 
 .ul {
   margin: 0;
@@ -807,6 +816,64 @@ a {
   border-bottom: 1px dashed #cedfde;
   -webkit-transform: scaleX(3.5);
   transform: scaleX(3.5); }
+
+.constructor__divider {
+  margin-bottom: 30px; }
+
+.constructor__radio {
+  margin-bottom: 30px; }
+  .constructor__radio .radio__title {
+    margin-bottom: 25px; }
+  .constructor__radio .radio__item {
+    margin-bottom: 15px; }
+  .constructor__radio .radio__item:last-child {
+    margin-bottom: 0; }
+
+.constructor__food-switcher {
+  margin-bottom: 25px; }
+
+.constructor__food-switcher:last-child {
+  margin-bottom: 0; }
+
+.constructor__price {
+  font-size: 0.8571rem;
+  color: #709594;
+  margin-bottom: 20px; }
+  .constructor__price .constructor__price-big {
+    font-size: 1.143rem;
+    font-weight: 700; }
+    .constructor__price .constructor__price-big span {
+      font-size: 1rem; }
+
+.food-switcher__title {
+  font-size: 1rem;
+  color: #3d5b5a; }
+  @media (min-width: 992px) {
+    .food-switcher__title {
+      max-width: 270px; } }
+
+.food-switcher__price {
+  font-size: 1.143rem;
+  font-weight: 700;
+  color: #3d5b5a; }
+  .food-switcher__price span {
+    font-size: 1rem; }
+
+.food-switcher__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+@media (min-width: 992px) {
+  .food-switcher .amount-switcher {
+    position: relative;
+    top: -14px; } }
 
 .product-composition {
   display: -webkit-box;
@@ -2133,6 +2200,15 @@ a {
 
 .product-card--admin .admin-field:last-child {
   margin-bottom: 0; }
+
+.product-card--constructor .product-card__content-top {
+  margin-bottom: 30px; }
+
+.product-card--constructor .product-card__content {
+  overflow: hidden; }
+
+.product-card--constructor .radio__desc {
+  margin-bottom: 30px; }
 
 .profile__title {
   margin-bottom: 35px; }

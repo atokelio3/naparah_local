@@ -1,0 +1,11 @@
+.review {
+  padding: 20px;
+  background-color: $color-white;
+  box-shadow: $box-shadow;
+  overflow: hidden;
+
+  @media (min-width: $screen-md) {
+    padding: 50px;
+  }
+
+}

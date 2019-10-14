@@ -253,5 +253,20 @@
     margin-bottom: 0;
   }
 
+}
+
+.product-card--constructor {
+
+  .product-card__content-top {
+    margin-bottom: 30px;
+  }
+
+  .product-card__content {
+    overflow: hidden;
+  }
+
+  .radio__desc {
+    margin-bottom: 30px;
+  }
 
 }
