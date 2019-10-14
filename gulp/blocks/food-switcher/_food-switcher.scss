@@ -1,13 +1,9 @@
 .food-switcher {
 
   &__title {
+    max-width: 270px;
     font-size: 1rem;
     color: $color-secondary;
-
-    @media (min-width: 992px) {
-      max-width: 270px;
-    }
-
   }
 
   &__price {

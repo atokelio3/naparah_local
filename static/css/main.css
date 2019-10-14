@@ -846,11 +846,9 @@ a {
       font-size: 1rem; }
 
 .food-switcher__title {
+  max-width: 270px;
   font-size: 1rem;
   color: #3d5b5a; }
-  @media (min-width: 992px) {
-    .food-switcher__title {
-      max-width: 270px; } }
 
 .food-switcher__price {
   font-size: 1.143rem;
