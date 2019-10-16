@@ -112,7 +112,6 @@
 
   &__desktop-nav-item {
     display: flex;
-    align-items: center;
     padding: 12px 26px;
     text-decoration: none;
     margin-bottom: 14px;
@@ -141,13 +140,19 @@
   }
 
   &__desktop-nav-icon {
-    font-size: 18px;
+    flex-shrink: 0;
+    width: 18px;
+    height: 23px;
     margin-right: 27px;
     opacity: 0.45;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &__desktop-nav-text {
     font-size: 1rem;
+    padding-top: 5px;
     color: $color-white;
     white-space: nowrap;
   }
