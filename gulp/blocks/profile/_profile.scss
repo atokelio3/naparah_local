@@ -86,7 +86,21 @@
   }
 
   &__checkbox {
+    margin-bottom: 20px;
+  }
+
+  &__passbook {
+    display: inline-block;
+    margin-left: -6px;
     margin-bottom: 40px;
+  }
+
+  &__passbook-img {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
   }
 
 }
