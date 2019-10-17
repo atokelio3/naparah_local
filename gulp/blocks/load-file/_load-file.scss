@@ -1,0 +1,43 @@
+.load-file {
+
+  &__files-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__file {
+    display: flex;
+    align-items: center;
+  }
+
+  &__file-icon {
+    margin-right: 9px;
+    font-size: 12px;
+  }
+
+  &__file-name {
+    margin-right: 8px;
+    font-size: 0.8571rem;
+    color: $color-secondary--lighten;
+  }
+
+  &__file-close-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 9px;
+    cursor: pointer;
+
+    span:before {
+      color: $color-secondary--lighten;
+    }
+
+  }
+
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>На Парах - Оставьте отзыв</title>
+  <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body class="body">
+
+<div class="general-wrapper">
+  <div class="general-wrapper__content">
+    <div class="modal">
+      <div class="modal__dialog">
+        <button type="button" class="modal__close-button">
+          <span class="icon-close"></span>
+        </button>
+        <div class="modal__content">
+          <form action="#" class="login-form">
+            <div class="modal__title login-form__title">Вход</div>
+            <div class="text-field login-form__text-field">
+              <input type="text" class="text-field__input login-form__input" placeholder="Введите номер телефона">
+            </div>
+            <div class="text-field login-form__text-field login-form__verify-visible">
+              <input type="text" class="text-field__input login-form__input" placeholder="СМС-пароль">
+            </div>
+            <div class="login-form__text login-form__verify-hidden">
+              При входе вы <a href="#" class="link">соглашаетесь с уловиями</a>
+            </div>
+            <div class="login-form__text login-form__verify-visible">
+              Вам поступит звонок с кодом подтверждения через 3 минуты
+            </div>
+            <button class="button login-form__button-big login-form__verify-hidden">Отправить смс-пароль</button>
+            <button class="button login-form__button login-form__verify-visible">Войти</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__sidebar-switcher">
+        <div class="header__sidebar-switcher-opening-icon">
+          <span class="icon-menu"></span>
+        </div>
+        <div class="header__sidebar-switcher-closing-icon">
+          <span class="icon-close-round"></span>
+        </div>
+      </div>
+      <div class="header__sidebar-title">Меню</div>
+      <div class="center-wrapper">
+        <div class="header__content">
+          <a href="tel:+78126400506" class="header__phone">
+          <span class="header__phone-icon">
+            <span class="icon-phone"></span>
+          </span>
+            <span class="header__phone-text-block">
+            <span class="header__phone-title">Единый телефон:</span>
+            <span class="header__phone-number">+7 (812) <span>640-05-06</span></span>
+          </span>
+          </a>
+          <a href="#" class="header__logo">
+            <img src="static/img/logo_head.svg" alt="Logo">
+          </a>
+          <div class="header__search">
+            <button class="header__search-button">
+              <span class="icon-search"></span>
+            </button>
+            <div class="header__search-form">
+              <form class="search-form">
+                <label class="search-form__label">
+              <span class="search-form__icon">
+                <span class="icon-search"></span>
+              </span>
+                  <input type="text" class="search-form__input">
+                  <button type="button" class="search-form__close-button">
+                    <span class="icon-close"></span>
+                  </button>
+                </label>
+                <ul class="desc-ul search-form__autocomplete-list">
+                  <li class="desc-ul__item">
+                    <a href="#" class="desc-ul__link">
+                      <span class="desc-ul__item-title">Киноа с белыми грибами</span>
+                      <span class="desc-ul__item-desc">Гарниры и соусы</span>
+                    </a>
+                  </li>
+                  <li class="desc-ul__item">
+                    <a href="#" class="desc-ul__link">
+                      <span class="desc-ul__item-title">Ризотто с белыми грибами</span>
+                      <span class="desc-ul__item-desc">Горячие блюда</span>
+                    </a>
+                  </li>
+                  <li class="desc-ul__item">
+                    <a href="#" class="desc-ul__link">
+                      <span class="desc-ul__item-title">Сан-Пелегрино</span>
+                      <span class="desc-ul__item-desc">Освежающие напитки</span>
+                    </a>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+          <div class="header__user">
+            <button class="header__user-button">
+              <span class="header__user-icon"><span class="icon-user"></span></span>
+              <span class="header__user-name">Сергей</span>
+              <span class="header__user-drop-arrow"><span class="icon-arrow_dropdown"></span></span>
+            </button>
+            <ul class="ul header__user-dropdown">
+              <li class="ul__item">
+                <a href="#" class="ul__link">Профиль</a>
+              </li>
+              <li class="ul__item">
+                <a href="#" class="ul__link">Заказы</a>
+              </li>
+              <li class="ul__item">
+                <a href="#" class="ul__link">Выход</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="header__cart">
+            <span class="header__cart-icon"><span class="icon-cart"></span></span>
+            <span class="header__cart-amount">3 блюда - </span>
+            <span class="header__cart-price">356 &#8381;</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="sidebar">
+      <nav class="sidebar__mobile-nav">
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-menu1"></span></span>
+          <span class="sidebar__mobile-nav-text">Меню</span>
+        </a>
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-cart"></span></span>
+          <span class="sidebar__mobile-nav-text">Корзина</span>
+        </a>
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-history"></span></span>
+          <span class="sidebar__mobile-nav-text">Заказы</span>
+        </a>
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-profile"></span></span>
+          <span class="sidebar__mobile-nav-text">Профиль</span>
+        </a>
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-sign_out"></span></span>
+          <span class="sidebar__mobile-nav-text">Выход</span>
+        </a>
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-sign_in1"></span></span>
+          <span class="sidebar__mobile-nav-text">Вход</span>
+        </a>
+        <div class="sidebar__mobile-nav-divider">
+          <span class="sidebar__mobile-nav-divider-dash"></span><span
+            class="sidebar__mobile-nav-divider-dash"></span><span class="sidebar__mobile-nav-divider-dash"></span><span
+            class="sidebar__mobile-nav-divider-dash"></span><span class="sidebar__mobile-nav-divider-dash"></span><span
+            class="sidebar__mobile-nav-divider-dash"></span><span class="sidebar__mobile-nav-divider-dash"></span><span
+            class="sidebar__mobile-nav-divider-dash"></span><span class="sidebar__mobile-nav-divider-dash"></span><span
+            class="sidebar__mobile-nav-divider-dash"></span>
+        </div>
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-delivery"></span></span>
+          <span class="sidebar__mobile-nav-text">Условия доставки</span>
+        </a>
+        <a href="#" class="sidebar__mobile-nav-item">
+          <span class="sidebar__mobile-nav-icon"><span class="icon-contact_us"></span></span>
+          <span class="sidebar__mobile-nav-text">Контакты</span>
+        </a>
+      </nav>
+      <div class="sidebar__desktop-nav-wrapper">
+        <nav class="sidebar__desktop-nav">
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon" style="background-image: url('static/img/sidebar-icons/roast_icon.svg')"></span>
+            <span class="sidebar__desktop-nav-text">Горячие блюда</span>
+          </a>
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon" style="background-image: url('static/img/sidebar-icons/salads_icon.svg')"></span>
+            <span class="sidebar__desktop-nav-text">Салаты</span>
+          </a>
+          <a href="#" class="sidebar__desktop-nav-item sidebar__desktop-nav-item--active">
+            <span class="sidebar__desktop-nav-icon" style="background-image: url('static/img/sidebar-icons/soup_icon.svg')"></span></span>
+            <span class="sidebar__desktop-nav-text">Супы</span>
+          </a>
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon" style="background-image: url('static/img/sidebar-icons/burger_icon.svg')"></span>
+            <span class="sidebar__desktop-nav-text">Бургеры</span>
+          </a>
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon" style="background-image: url('static/img/sidebar-icons/snacks_icon.svg')"></span>
+            <span class="sidebar__desktop-nav-text">Закуски и хлеб</span>
+          </a>
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon" style="background-image: url('static/img/sidebar-icons/dessert_icon.svg')"></span>
+            <span class="sidebar__desktop-nav-text">Десерты</span>
+          </a>
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon" style="background-image: url('static/img/sidebar-icons/garnish_icon.svg')"></span>
+            <span class="sidebar__desktop-nav-text">Гарниры и соусы</span>
+          </a>
+          <div class="sidebar__desktop-nav-divider">
+            <span class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span><span
+              class="sidebar__desktop-nav-divider-dash"></span>
+          </div>
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon" style="background-image: url('static/img/sidebar-icons/delivery.svg')"></span>
+            <span class="sidebar__desktop-nav-text">Условия доставки</span>
+          </a>
+          <a href="#" class="sidebar__desktop-nav-item">
+            <span class="sidebar__desktop-nav-icon" style="background-image: url('static/img/sidebar-icons/contact_us.svg')"></span>
+            <span class="sidebar__desktop-nav-text">Контакты</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+    <div class="center-wrapper center-wrapper--content">
+     <div class="inner-container inner-container--xs">
+       <div class="questionnaire">
+         <form action="#" class="questionnaire__form">
+           <div class="questionnaire__form-item">
+             <div class="questionnaire__form-item-title">1. Оцените вкус</div>
+             <div class="questionnaire__radio radio">
+               <div class="questionnaire__radio-icons-row">
+                 <label class="questionnaire__radio-item questionnaire__radio-item--icon radio__item"><span
+                     class="radio__icon icon-bad"><span
+                     class="path1"></span><span
+                     class="path2"></span><span class="path3"></span><span class="path4"></span><span
+                     class="path5"></span></span>
+                   <input class="radio__item-hidden" type="radio" checked="checked" name="radio1">
+                   <span class="radio__item-mark"></span>
+                 </label>
+                 <label class="questionnaire__radio-item questionnaire__radio-item--icon radio__item"><span
+                     class="radio__icon icon-so-so"><span
+                     class="path1"></span><span
+                     class="path2"></span><span class="path3"></span><span class="path4"></span><span
+                     class="path5"></span></span>
+                   <input class="radio__item-hidden" type="radio" name="radio1">
+                   <span class="radio__item-mark"></span>
+                 </label>
+                 <label class="questionnaire__radio-item questionnaire__radio-item--icon radio__item"><span
+                     class="radio__icon icon-fine"><span
+                     class="path1"></span><span class="path2"></span><span
+                     class="path3"></span><span class="path4"></span><span class="path5"></span></span>
+                   <input class="radio__item-hidden" type="radio" name="radio1">
+                   <span class="radio__item-mark"></span>
+                 </label>
+               </div>
+               <label class="questionnaire__radio-item radio__item">Другое (укажите)
+                 <input class="radio__item-hidden" type="radio" name="radio1">
+                 <span class="radio__item-mark"></span>
+               </label>
+             </div>
+             <div class="text-field questionnaire__text-field">
+               <input type="text" class="text-field__input" placeholder="Комментарий">
+             </div>
+           </div>
+           <div class="questionnaire__divider divider"></div>
+           <div class="questionnaire__form-item">
+             <div class="questionnaire__form-item-title">2. Был ли подан вовремя?</div>
+             <div class="questionnaire__radio radio">
+               <div class="questionnaire__radio-icons-row">
+                 <label class="questionnaire__radio-item questionnaire__radio-item--icon radio__item"><span
+                     class="radio__icon icon-bad"><span
+                     class="path1"></span><span
+                     class="path2"></span><span class="path3"></span><span class="path4"></span><span
+                     class="path5"></span></span>
+                   <input class="radio__item-hidden" type="radio" checked="checked" name="radio2">
+                   <span class="radio__item-mark"></span>
+                 </label>
+                 <label class="questionnaire__radio-item questionnaire__radio-item--icon radio__item"><span
+                     class="radio__icon icon-so-so"><span
+                     class="path1"></span><span
+                     class="path2"></span><span class="path3"></span><span class="path4"></span><span
+                     class="path5"></span></span>
+                   <input class="radio__item-hidden" type="radio" name="radio2">
+                   <span class="radio__item-mark"></span>
+                 </label>
+                 <label class="questionnaire__radio-item questionnaire__radio-item--icon radio__item"><span
+                     class="radio__icon icon-fine"><span
+                     class="path1"></span><span class="path2"></span><span
+                     class="path3"></span><span class="path4"></span><span class="path5"></span></span>
+                   <input class="radio__item-hidden" type="radio" name="radio2">
+                   <span class="radio__item-mark"></span>
+                 </label>
+               </div>
+               <label class="questionnaire__radio-item radio__item">Укажите время задержки
+                 <input class="radio__item-hidden" type="radio" name="radio2">
+                 <span class="radio__item-mark"></span>
+               </label>
+             </div>
+             <div class="text-field questionnaire__text-field">
+               <input type="text" class="text-field__input" placeholder="Комментарий">
+             </div>
+           </div>
+           <div class="questionnaire__divider divider"></div>
+           <div class="questionnaire__form-item">
+             <div class="questionnaire__form-item-title">3. Откуда вы узнали о нас?</div>
+             <div class="questionnaire__radio radio radio--md6">
+               <label class="questionnaire__radio-item radio__item">Вывеска на фасаде
+                 <input class="radio__item-hidden" type="radio" checked="checked" name="radio3">
+                 <span class="radio__item-mark"></span>
+               </label>
+               <label class="questionnaire__radio-item radio__item">Интернет
+                 <input class="radio__item-hidden" type="radio" name="radio3">
+                 <span class="radio__item-mark"></span>
+               </label>
+               <label class="questionnaire__radio-item radio__item">Метро
+                 <input class="radio__item-hidden" type="radio" name="radio3">
+                 <span class="radio__item-mark"></span>
+               </label>
+               <label class="questionnaire__radio-item radio__item">Рекомендация друзей
+                 <input class="radio__item-hidden" type="radio" name="radio3">
+                 <span class="radio__item-mark"></span>
+               </label>
+               <label class="questionnaire__radio-item radio__item">Реклама в городе
+                 <input class="radio__item-hidden" type="radio" name="radio3">
+                 <span class="radio__item-mark"></span>
+               </label>
+               <label class="questionnaire__radio-item radio__item">Другое (укажите)
+                 <input class="radio__item-hidden" type="radio" name="radio3">
+                 <span class="radio__item-mark"></span>
+               </label>
+             </div>
+             <div class="text-field questionnaire__text-field">
+               <input type="text" class="text-field__input" placeholder="Комментарий">
+             </div>
+           </div>
+           <div class="questionnaire__divider divider"></div>
+           <div class="questionnaire__form-item">
+             <div class="questionnaire__form-item-title">4. Как часто вы посещаете наше кафе или пользуетесь
+               доставкой?
+             </div>
+             <div class="questionnaire__radio radio radio--md6">
+               <label class="questionnaire__radio-item radio__item">Первый раз
+                 <input class="radio__item-hidden" type="radio" checked="checked" name="radio4">
+                 <span class="radio__item-mark"></span>
+               </label>
+               <label class="questionnaire__radio-item radio__item">Несколько раз в год
+                 <input class="radio__item-hidden" type="radio" name="radio4">
+                 <span class="radio__item-mark"></span>
+               </label>
+               <label class="questionnaire__radio-item radio__item">Один раз в неделю
+                 <input class="radio__item-hidden" type="radio" name="radio4">
+                 <span class="radio__item-mark"></span>
+               </label>
+               <label class="questionnaire__radio-item radio__item">Я из другого города
+                 <input class="radio__item-hidden" type="radio" name="radio4">
+                 <span class="radio__item-mark"></span>
+               </label>
+               <label class="questionnaire__radio-item radio__item">Несколько раз в неделю
+                 <input class="radio__item-hidden" type="radio" name="radio4">
+                 <span class="radio__item-mark"></span>
+               </label>
+               <label class="questionnaire__radio-item radio__item">Другое (укажите)
+                 <input class="radio__item-hidden" type="radio" name="radio4">
+                 <span class="radio__item-mark"></span>
+               </label>
+             </div>
+             <div class="text-field questionnaire__text-field">
+               <input type="text" class="text-field__input" placeholder="Комментарий">
+             </div>
+           </div>
+           <div class="questionnaire__divider divider"></div>
+           <div class="questionnaire__form-item">
+             <div class="questionnaire__form-item-title">5. Комментарий
+             </div>
+             <div class="text-field questionnaire__text-field">
+               <input type="text" class="text-field__input" placeholder="Комментарий">
+             </div>
+           </div>
+           <div class="questionnaire__divider divider"></div>
+           <div class="questionnaire__form-item">
+             <div class="questionnaire__form-item-title">6. Фотографии, если необходимы
+             </div>
+             <div class="questionnaire__load-file load-file">
+               <button class="button button--secondary">Выберете файл</button>
+               <ul class="load-file__files-list">
+                 <li class="load-file__file">
+                   <div class="load-file__file-icon"><span class="icon-checkbox_check"></span></div>
+                   <div class="load-file__file-name">312788-unsplash.jpg </div>
+                   <button class="load-file__file-close-button"><span class="icon-close"></span></button>
+                 </li>
+                 <li class="load-file__file">
+                   <div class="load-file__file-icon"><span class="icon-checkbox_check"></span></div>
+                   <div class="load-file__file-name">daniil-kuzelev-312788-unsplashdaniil-kuzelev-312788-unsplash.jpg </div>
+                   <button class="load-file__file-close-button"><span class="icon-close"></span></button>
+                 </li>
+                 <li class="load-file__file">
+                   <div class="load-file__file-icon"><span class="icon-checkbox_check"></span></div>
+                   <div class="load-file__file-name">daniil-kuzelev-312788-unsplash.jpg </div>
+                   <button class="load-file__file-close-button"><span class="icon-close"></span></button>
+                 </li>
+               </ul>
+             </div>
+           </div>
+           <div class="questionnaire__divider divider"></div>
+           <button class="questionnaire__submit-button button">Готово</button>
+         </form>
+       </div>
+     </div>
+    </div>
+  </div>
+  <footer class="general-wrapper__footer footer">
+    <div class="center-wrapper">
+      <div class="footer__content">
+        <a href="#" class="footer__logo">
+          <img src="static/img/logo_footer.svg" alt="Logo">
+        </a>
+        <div class="footer__social">
+          <a href="#" target="_blank" class="footer__social-item"><span class="icon-vk"></span></a>
+          <a href="#" target="_blank" class="footer__social-item"><span class="icon-instagram"></span></a>
+        </div>
+        <div class="footer__text-copyright">
+          Copyright &copy; Кафе "На Парах" <span>2010-2019</span>
+        </div>
+        <div class="footer__agreement-link-wrapper">
+          <a href="#" class="footer__agreement-link">Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="static/js/main.js"></script>
+</body>
+</html>
