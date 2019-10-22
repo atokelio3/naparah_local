@@ -3,6 +3,12 @@
   box-shadow: $box-shadow;
   background-color: $color-white;
 
+  &__tooltip-icons {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+  }
+
   &__img {
     height: 150px;
     background-repeat: no-repeat;

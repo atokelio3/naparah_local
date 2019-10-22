@@ -1,0 +1,39 @@
+.category-filter {
+  display: flex;
+  overflow-x: auto;
+
+  @media (min-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: 10px 20px;
+    margin-right: 15px;
+    background-color: $color-secondary--lightest;
+    font-size: $font-size;
+    border-radius: $border-radius;
+    color: $color-secondary--light;
+    transition: background-color 0.2s;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+      margin-bottom: 15px;
+    }
+
+  }
+
+  &__item:hover {
+    background-color: $color-main;
+    color: $color-white;
+  }
+
+  &__item--active {
+    background-color: $color-main;
+    color: $color-white;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+}
