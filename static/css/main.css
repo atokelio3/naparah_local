@@ -2349,17 +2349,17 @@ a {
       line-height: 1.7;
       letter-spacing: 0.65px; } }
 
-.product-card--admin .product-card__img {
+.product-card--admin .product-card__img-container {
   position: relative;
   z-index: 2; }
-  .product-card--admin .product-card__img .button {
+  .product-card--admin .product-card__img-container .button {
     position: absolute;
     min-width: 190px;
     font-size: 0.8571rem;
     -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
     @media (min-width: 768px) {
-      .product-card--admin .product-card__img .button {
+      .product-card--admin .product-card__img-container .button {
         min-width: 225px;
         font-size: 1rem;
         padding: 13px 20px;
