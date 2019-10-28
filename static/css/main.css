@@ -1957,7 +1957,7 @@ a {
 .footer {
   padding: 25px 0;
   background-color: #203131; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .footer__content {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1967,15 +1967,13 @@ a {
       align-items: center; } }
   .footer__logo {
     display: none;
-    width: 100px; }
+    min-width: 100px; }
     .footer__logo img {
       display: block;
       width: 100%; }
-    @media (min-width: 768px) {
-      .footer__logo {
-        display: block; } }
     @media (min-width: 992px) {
       .footer__logo {
+        display: block;
         width: 125px; } }
   .footer__social {
     display: -webkit-box;
@@ -1985,11 +1983,12 @@ a {
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 20px; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .footer__social {
-        -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-        order: 1;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        margin-right: 30px;
         margin-left: auto;
         margin-bottom: 0; } }
     @media (min-width: 1200px) {
@@ -2016,13 +2015,13 @@ a {
     color: #808080; }
     .footer__text-copyright span {
       white-space: nowrap; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .footer__text-copyright {
-        -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-        order: 2;
-        margin-bottom: 0;
-        padding-left: 40px; } }
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+        min-width: 180px;
+        margin-bottom: 0; } }
   .footer__agreement-link-wrapper {
     text-align: center; }
     @media (min-width: 768px) {
@@ -2037,6 +2036,28 @@ a {
     color: #808080; }
     .footer__agreement-link:hover {
       text-decoration: none; }
+  .footer__mobile-app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 25px; }
+    .footer__mobile-app img {
+      display: block; }
+    @media (min-width: 992px) {
+      .footer__mobile-app {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        padding: 0 30px 0 20px;
+        margin-bottom: 0; } }
+    @media (min-width: 1200px) {
+      .footer__mobile-app {
+        padding: 0 50px; } }
+  .footer__mobile-app-link:first-child {
+    margin-right: 20px; }
 
 .menu__title {
   margin-bottom: 35px; }
@@ -2118,6 +2139,73 @@ a {
   @media (min-width: 768px) {
     .menu__item-text {
       font-size: 1.714rem; } }
+
+.mobile-app {
+  display: none;
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 25px 25px 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+  .mobile-app:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/mobile-app-tr.png") no-repeat;
+    background-size: cover; }
+  @media (min-width: 768px) {
+    .mobile-app {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  .mobile-app__content {
+    margin-right: 70px; }
+    @media (min-width: 992px) {
+      .mobile-app__content {
+        margin-right: 100px; } }
+  .mobile-app__title {
+    margin-bottom: 30px;
+    font-size: 1.286rem;
+    color: #3d5b5a;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .mobile-app__text {
+    display: none;
+    margin-bottom: 35px;
+    color: #3d5b5a;
+    font-size: 14px; }
+  .mobile-app__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media (min-width: 992px) {
+      .mobile-app__links {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; } }
+  .mobile-app__link:first-child {
+    margin-bottom: 10px; }
+    @media (min-width: 992px) {
+      .mobile-app__link:first-child {
+        margin-bottom: 0;
+        margin-right: 20px; } }
+  .mobile-app__img {
+    width: 275px; }
 
 .catalog__page-header {
   margin-bottom: 25px; }

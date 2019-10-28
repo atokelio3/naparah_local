@@ -1,3 +1,74 @@
 .mobile-app {
+  display: none;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px 0;
+  background-color: $color-white;
+  box-shadow: $box-shadow;
+
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 40px;
+    height: 40px;
+    background: url('../img/mobile-app-tr.png') no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: $screen-md) {
+    display: flex;
+  }
+
+  &__content {
+    margin-right: 70px;
+
+    @media (min-width: $screen-lg) {
+      margin-right: 100px;
+    }
+
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 1.286rem;
+    color: $color-secondary;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    display: none;
+    margin-bottom: 35px;
+    color: $color-secondary;
+    font-size: $font-size;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-lg) {
+      flex-direction: row;
+    }
+
+  }
+
+  &__link:first-child {
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+
+  }
+
+  &__img {
+    width: 275px;
+  }
 
 }
