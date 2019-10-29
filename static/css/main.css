@@ -2002,7 +2002,7 @@ a {
     transition: opacity 0.3s; }
     .footer__social-item:hover {
       opacity: 1; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .footer__social-item {
         opacity: 0.4; } }
   .footer__social-item:last-child {
@@ -3400,6 +3400,87 @@ a {
           margin-right: 15px; }
         .follow-us__photo:nth-child(5n) {
           margin-right: 0; } }
+
+.history__title {
+  margin-bottom: 25px; }
+  @media (min-width: 768px) {
+    .history__title {
+      margin-bottom: 35px; } }
+
+.history__content {
+  padding: 35px 20px 20px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff; }
+  @media (min-width: 768px) {
+    .history__content {
+      padding: 40px; } }
+
+.history__heading {
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .history__heading {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-bottom: 45px; } }
+
+.history__number {
+  margin-bottom: 10px;
+  font-size: 1.286rem;
+  color: #3d5b5a;
+  font-weight: 700; }
+  @media (min-width: 768px) {
+    .history__number {
+      margin-bottom: 0;
+      font-size: 1.714rem; } }
+
+.history__date {
+  font-size: 14px;
+  color: #709594; }
+  @media (min-width: 768px) {
+    .history__date {
+      padding-top: 10px; } }
+
+.history__content-items-top {
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .history__content-items-top {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-bottom: 40px; } }
+
+.history__content-item {
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .history__content-item {
+      width: 50%;
+      padding-right: 50px;
+      margin-bottom: 40px; } }
+
+.history__content-item--big {
+  width: 100%; }
+
+.history__content-item:last-child {
+  margin-bottom: 0; }
+
+.history__content-item-label {
+  margin-bottom: 13px;
+  font-size: 0.8571rem;
+  color: #709594; }
+
+.history__content-item-value {
+  font-size: 14px;
+  color: #3d5b5a; }
+
+.history__dish-list-wrapper {
+  overflow: hidden; }
 
 .user-agreement__title {
   margin-bottom: 20px; }
