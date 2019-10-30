@@ -108,12 +108,16 @@
     margin-bottom: 30px;
   }
 
+  &__dish-list {
+    padding-bottom: 20px;
+  }
+
   &__dish {
     display: flex;
   }
 
   &__dish-title {
-    max-width: 200px;
+    max-width: 250px;
     display: inline-block;
   }
 
@@ -200,6 +204,7 @@
   }
 
   &__dish-ingredient {
+    max-width: 250px;
     position: relative;
     padding-left: 30px;
     font-size: 0.8571rem;
@@ -219,6 +224,28 @@
 
   &__dish-item-divider {
     margin: 20px 0;
+  }
+
+  &__points {
+    margin-bottom: 10px;
+  }
+
+  &__points-title {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 1.143rem;
+    color: #3d5b5a;
+  }
+
+  &__points-value {
+    display: inline-block;
+    font-size: 1.143rem;
+    line-height: 1;
+    color: #3d5b5a;
+  }
+
+  &__dish-info-checklist {
+    max-width: 250px;
   }
 
 }

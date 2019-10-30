@@ -3495,13 +3495,16 @@ a {
 .history__dish-list-divider {
   margin-bottom: 30px; }
 
+.history__dish-list {
+  padding-bottom: 20px; }
+
 .history__dish {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .history__dish-title {
-  max-width: 200px;
+  max-width: 250px;
   display: inline-block; }
 
 .history__dish-img {
@@ -3568,6 +3571,7 @@ a {
         font-size: 1rem; } }
 
 .history__dish-ingredient {
+  max-width: 250px;
   position: relative;
   padding-left: 30px;
   font-size: 0.8571rem;
@@ -3583,6 +3587,24 @@ a {
 
 .history__dish-item-divider {
   margin: 20px 0; }
+
+.history__points {
+  margin-bottom: 10px; }
+
+.history__points-title {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 1.143rem;
+  color: #3d5b5a; }
+
+.history__points-value {
+  display: inline-block;
+  font-size: 1.143rem;
+  line-height: 1;
+  color: #3d5b5a; }
+
+.history__dish-info-checklist {
+  max-width: 250px; }
 
 .user-agreement__title {
   margin-bottom: 20px; }
