@@ -29,3 +29,15 @@
   }
 
 }
+
+.checklist--sm {
+
+  .checklist__item {
+    font-size: 0.8571rem;
+  }
+
+  .checklist__item:before {
+    height: 12px;
+  }
+
+}
