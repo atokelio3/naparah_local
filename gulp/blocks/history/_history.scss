@@ -200,23 +200,19 @@
   }
 
   &__dish-ingredient {
+    position: relative;
+    padding-left: 30px;
     font-size: 0.8571rem;
     color: $color-secondary--light;
 
-    @media (min-width: $screen-md) {
-      font-size: 1rem;
-    }
-
-    span {
-      display: inline-block;
-      margin-right: 3px;
-      font-size: 1rem;
+    &:before {
+      display: block;
+      content: '+';
+      position: absolute;
+      top: -5px;
+      left: 2px;
+      font-size: 20px;
       color: $color-main;
-
-      @media (min-width: $screen-md) {
-        font-size: 1.143rem;
-      }
-
     }
 
   }

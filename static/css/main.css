@@ -3568,19 +3568,18 @@ a {
         font-size: 1rem; } }
 
 .history__dish-ingredient {
+  position: relative;
+  padding-left: 30px;
   font-size: 0.8571rem;
   color: #709594; }
-  @media (min-width: 768px) {
-    .history__dish-ingredient {
-      font-size: 1rem; } }
-  .history__dish-ingredient span {
-    display: inline-block;
-    margin-right: 3px;
-    font-size: 1rem;
+  .history__dish-ingredient:before {
+    display: block;
+    content: '+';
+    position: absolute;
+    top: -5px;
+    left: 2px;
+    font-size: 20px;
     color: #a7c205; }
-    @media (min-width: 768px) {
-      .history__dish-ingredient span {
-        font-size: 1.143rem; } }
 
 .history__dish-item-divider {
   margin: 20px 0; }
