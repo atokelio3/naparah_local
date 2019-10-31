@@ -3718,3 +3718,50 @@ a {
     min-width: 205px;
     padding: 14px 20px;
     border-radius: 23px; }
+
+.restaurant {
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+  .restaurant__content {
+    padding: 25px; }
+    @media (min-width: 768px) {
+      .restaurant__content {
+        padding: 55px 55px 35px; } }
+  @media (min-width: 768px) {
+    .restaurant__contacts {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+  .restaurant__contacts .address {
+    margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .restaurant__address {
+      width: 50%; } }
+  .restaurant__phone {
+    display: inline-block;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
+    @media (min-width: 768px) {
+      .restaurant__phone {
+        width: 40%; } }
+  .restaurant__contacts-phone {
+    display: inline-block; }
+  .restaurant__map {
+    height: 210px;
+    margin-bottom: 40px;
+    background-color: #e7efee; }
+    @media (min-width: 768px) {
+      .restaurant__map {
+        margin-bottom: 55px; } }
+  .restaurant__text {
+    font-size: 1rem;
+    color: #3d5b5a;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .restaurant__slider {
+    height: 320px;
+    background-color: grey; }

@@ -1,0 +1,73 @@
+.restaurant {
+  background-color: $color-white;
+  box-shadow: $box-shadow;
+
+  &__content {
+    padding: 25px;
+
+    @media (min-width: $screen-md) {
+      padding: 55px 55px 35px;
+    }
+
+  }
+
+  &__contacts {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .address {
+      margin-bottom: 30px;
+    }
+
+  }
+
+  &__address {
+
+    @media (min-width: $screen-md) {
+      width: 50%;
+    }
+
+  }
+
+  &__phone {
+    display: inline-block;
+    flex-shrink: 0;
+
+    @media (min-width: $screen-md) {
+      width: 40%
+    }
+
+  }
+
+  &__contacts-phone {
+    display: inline-block;
+  }
+
+  &__map {
+    height: 210px;
+    margin-bottom: 40px;
+    background-color: $color-background--dark;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 55px;
+    }
+
+  }
+
+  &__text {
+    font-size: 1rem;
+    color: $color-secondary;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__slider {
+    height: 320px;
+    background-color: grey;
+  }
+
+
+}
