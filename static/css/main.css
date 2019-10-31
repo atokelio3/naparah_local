@@ -3763,5 +3763,9 @@ a {
     font-weight: 700;
     text-transform: uppercase; }
   .restaurant__slider {
+    height: 320px; }
+  .restaurant__slider-img {
     height: 320px;
-    background-color: grey; }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }

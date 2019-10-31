@@ -66,7 +66,13 @@
 
   &__slider {
     height: 320px;
-    background-color: grey;
+  }
+
+  &__slider-img {
+    height: 320px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
 
