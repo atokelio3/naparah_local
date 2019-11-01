@@ -3290,11 +3290,17 @@ a {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
 
 .contacts__map {
-  height: 210px;
+  height: 220px;
   background-color: #e7efee; }
   @media (min-width: 768px) {
     .contacts__map {
       height: 300px; } }
+  .contacts__map .delivery-areas__map {
+    height: 220px;
+    background-color: #e7efee; }
+    @media (min-width: 768px) {
+      .contacts__map .delivery-areas__map {
+        height: 300px; } }
 
 .contacts__info {
   padding: 40px 20px 0; }

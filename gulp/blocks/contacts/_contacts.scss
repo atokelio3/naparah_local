@@ -15,11 +15,22 @@
   }
 
   &__map {
-    height: 210px;
+
+    height: 220px;
     background-color: $color-background--dark;
 
     @media (min-width: $screen-md) {
       height: 300px;
+    }
+
+    .delivery-areas__map {
+      height: 220px;
+      background-color: $color-background--dark;
+
+      @media (min-width: $screen-md) {
+        height: 300px;
+      }
+
     }
 
   }
@@ -104,3 +115,4 @@
 
 
 }
+
