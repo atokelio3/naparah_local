@@ -807,6 +807,11 @@ a {
     color: #96af04;
     text-decoration: underline; }
 
+.breadcrumbs {
+  margin-bottom: 40px; }
+  .breadcrumbs__sep {
+    margin: 0 10px; }
+
 .address {
   position: relative;
   padding: 2px 0 0 35px; }
