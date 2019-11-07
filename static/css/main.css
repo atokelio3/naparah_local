@@ -798,6 +798,26 @@ a {
 .checklist--sm .checklist__item:before {
   height: 12px; }
 
+.toppings__item {
+  max-width: 250px;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  font-size: 0.8571rem;
+  color: #709594; }
+
+.toppings__item:last-child {
+  margin-bottom: 0; }
+
+.toppings__item:before {
+  display: block;
+  content: '+';
+  position: absolute;
+  top: -5px;
+  left: 2px;
+  font-size: 20px;
+  color: #a7c205; }
+
 .link {
   font-size: 14px;
   color: #a7c205;
@@ -920,6 +940,69 @@ a {
   border-bottom: 1px dashed #cedfde;
   -webkit-transform: scaleX(3.5);
   transform: scaleX(3.5); }
+
+.related-products {
+  padding-top: 40px; }
+  @media (min-width: 768px) {
+    .related-products {
+      padding-top: 55px; } }
+  .related-products__title {
+    margin-bottom: 28px;
+    font-size: 1.143rem;
+    font-weight: 700;
+    color: #3d5b5a;
+    text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .related-products__title {
+        font-size: 1.429rem; } }
+  .related-products__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: auto; }
+    @media (min-width: 768px) {
+      .related-products__list {
+        overflow-x: unset; } }
+  .related-products__item {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 176px;
+    margin-right: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+  .related-products__item:last-child {
+    margin-right: 0; }
+  .related-products__item-img {
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .related-products__item-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: calc(100% - 100px);
+    padding: 20px 15px; }
+  .related-products__item-title {
+    display: inline-block;
+    min-height: 29px;
+    margin-bottom: 12px;
+    font-size: 0.8571rem; }
+  .related-products__item-price {
+    font-size: 1.143rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #3d5b5a; }
+    .related-products__item-price span {
+      font-size: 1rem; }
 
 .constructor__divider {
   margin-bottom: 30px; }

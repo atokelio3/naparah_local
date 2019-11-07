@@ -1,0 +1,26 @@
+.toppings {
+
+  &__item {
+    max-width: 250px;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 0.8571rem;
+    color: $color-secondary--light;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__item:before {
+    display: block;
+    content: '+';
+    position: absolute;
+    top: -5px;
+    left: 2px;
+    font-size: 20px;
+    color: $color-main;
+  }
+
+}
