@@ -2688,6 +2688,61 @@ a {
   margin-right: 10px;
   vertical-align: middle; }
 
+.profile__points-tooltip-wrapper {
+  position: absolute;
+  z-index: 2;
+  top: calc(100% + 10px);
+  left: -10px; }
+  @media (min-width: 768px) {
+    .profile__points-tooltip-wrapper {
+      left: unset;
+      right: -10px; } }
+
+.profile__points-info {
+  display: inline-block;
+  position: relative; }
+  .profile__points-info .profile__points-tooltip-wrapper {
+    display: none; }
+
+.profile__points-info--active .profile__points-tooltip-wrapper {
+  display: block; }
+
+.profile__points-tooltip {
+  position: relative;
+  width: 250px;
+  padding: 15px;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+  @media (min-width: 768px) {
+    .profile__points-tooltip {
+      width: 300px; } }
+  .profile__points-tooltip:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 25px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+    @media (min-width: 768px) {
+      .profile__points-tooltip:before {
+        left: unset;
+        right: 25px; } }
+
+.profile__points-tooltip-text {
+  margin-bottom: 10px;
+  font-size: 0.8571rem;
+  line-height: 1.5;
+  color: #92b3b2; }
+
+.profile__points-tooltip-text:last-child {
+  margin-bottom: 0; }
+
 .cart__page-header {
   margin-bottom: 20px; }
   @media (min-width: 768px) {
