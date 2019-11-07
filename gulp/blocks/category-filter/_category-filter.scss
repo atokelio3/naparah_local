@@ -7,6 +7,7 @@
   }
 
   &__item {
+    white-space: nowrap;
     padding: 10px 20px;
     margin-right: 15px;
     background-color: $color-secondary--lightest;

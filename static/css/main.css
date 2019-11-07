@@ -802,7 +802,7 @@ a {
   max-width: 250px;
   position: relative;
   padding-left: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 0.8571rem;
   color: #709594; }
 
@@ -1459,6 +1459,7 @@ a {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
   .category-filter__item {
+    white-space: nowrap;
     padding: 10px 20px;
     margin-right: 15px;
     background-color: #cedfde;
@@ -2990,6 +2991,9 @@ a {
   @media (min-width: 768px) {
     .cart__empty-text {
       font-size: 1.286rem; } }
+
+.cart__toppings {
+  padding: 15px 0; }
 
 .checkout__form {
   overflow: hidden;
