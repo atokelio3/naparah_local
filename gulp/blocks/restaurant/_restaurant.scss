@@ -55,6 +55,14 @@
       margin-bottom: 55px;
     }
 
+    .delivery-areas__map {
+
+      @media (min-width: $screen-md) {
+        height: 220px;
+      }
+
+    }
+
   }
 
   &__text {

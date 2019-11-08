@@ -3905,6 +3905,9 @@ a {
     @media (min-width: 768px) {
       .restaurant__map {
         margin-bottom: 55px; } }
+    @media (min-width: 768px) {
+      .restaurant__map .delivery-areas__map {
+        height: 220px; } }
   .restaurant__text {
     font-size: 1rem;
     color: #3d5b5a;
