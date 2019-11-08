@@ -1090,6 +1090,27 @@ a {
   .tooltip-icons__img:first-child {
     margin-left: 0; }
 
+.empty-box {
+  padding: 80px 25px 125px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff; }
+  .empty-box__icon {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 35px;
+    font-size: 85px; }
+    .empty-box__icon span:before {
+      color: #e5eeee; }
+  .empty-box__text {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: #92b3b2; }
+    @media (min-width: 768px) {
+      .empty-box__text {
+        font-size: 1.286rem; } }
+
 .modal {
   position: fixed;
   z-index: 6;

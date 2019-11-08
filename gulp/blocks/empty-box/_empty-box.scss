@@ -1,0 +1,31 @@
+.empty-box {
+    padding: 80px 25px 125px;
+    box-shadow: $box-shadow;
+    background-color: $color-white;
+
+  &__icon {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 35px;
+    font-size: 85px;
+
+    span:before {
+      color: #e5eeee;
+    }
+
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: $color-secondary--lighten;
+
+    @media (min-width: $screen-md) {
+      font-size: 1.286rem;
+    }
+
+  }
+
+
+}
