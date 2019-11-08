@@ -1633,6 +1633,8 @@ a {
         position: relative;
         padding-left: 0; } }
   .header__logo {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
     display: block;
     width: 100px; }
     .header__logo img {
@@ -1647,7 +1649,7 @@ a {
     @media (min-width: 992px) {
       .header__logo {
         width: 135px;
-        margin-left: 180px; } }
+        margin-left: 105px; } }
     @media (min-width: 1200px) {
       .header__logo {
         margin-left: 270px; } }
@@ -1687,12 +1689,6 @@ a {
         height: unset;
         padding: 0;
         background-color: unset; } }
-    @media (min-width: 992px) {
-      .header__search-form {
-        width: 200px; } }
-    @media (min-width: 1200px) {
-      .header__search-form {
-        width: 280px; } }
   .header__search--active .header__search-form {
     display: block; }
   .header__search-button {
@@ -1727,13 +1723,14 @@ a {
           color: #92b3b2; } }
   @media (min-width: 768px) {
     .header__cart {
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      margin-left: auto;
       -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
       order: 3; } }
@@ -1775,6 +1772,8 @@ a {
     display: none; }
     @media (min-width: 768px) {
       .header__phone {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1820,19 +1819,11 @@ a {
     -ms-flex-order: 2;
     order: 2;
     position: relative;
-    margin-left: 115px; }
+    padding-right: 20px;
+    margin-left: auto; }
     @media (min-width: 768px) {
       .header__user {
         display: block; } }
-    @media (min-width: 992px) {
-      .header__user {
-        margin-left: 65px; } }
-    @media (min-width: 1200px) {
-      .header__user {
-        margin-left: 165px; } }
-    @media (min-width: 1350px) {
-      .header__user {
-        margin-left: 255px; } }
   .header__user-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1847,6 +1838,9 @@ a {
   .header__user-icon {
     font-size: 16px; }
   .header__user-name {
+    max-width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin: 0 7px;
     font-size: 1rem;
     color: #92b3b2; }

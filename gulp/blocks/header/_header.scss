@@ -94,6 +94,7 @@
   }
 
   &__logo {
+    flex-shrink: 0;
     display: block;
     width: 100px;
 
@@ -109,7 +110,7 @@
 
     @media (min-width: $screen-lg) {
       width: 135px;
-      margin-left: 180px;
+      margin-left: 105px;
     }
 
     @media (min-width: $screen-xl) {
@@ -164,14 +165,6 @@
       background-color: unset;
     }
 
-    @media (min-width: $screen-lg) {
-      width: 200px;
-    }
-
-    @media (min-width: $screen-xl) {
-      width: 280px;
-    }
-
   }
 
   &__search--active {
@@ -219,9 +212,9 @@
   &__cart {
 
     @media (min-width: $screen-md) {
+      flex-shrink: 0;
       display: flex;
       align-items: center;
-      margin-left: auto;
       order: 3;
     }
 
@@ -271,6 +264,7 @@
     display: none;
 
     @media (min-width: $screen-md) {
+      flex-shrink: 0;
       display: flex;
       align-items: center;
     }
@@ -316,22 +310,11 @@
     display: none;
     order: 2;
     position: relative;
-    margin-left: 115px;
+    padding-right: 20px;
+    margin-left: auto;
 
     @media (min-width: $screen-md) {
       display: block;
-    }
-
-    @media (min-width: $screen-lg) {
-      margin-left: 65px;
-    }
-
-    @media (min-width: $screen-xl) {
-      margin-left: 165px;
-    }
-
-    @media (min-width: $screen-xxl) {
-      margin-left: 255px;
     }
 
   }
@@ -350,6 +333,9 @@
   }
 
   &__user-name {
+    max-width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin: 0 7px;
     font-size: 1rem;
     color: $color-secondary--lighten;
