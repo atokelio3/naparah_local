@@ -3363,6 +3363,19 @@ a {
       width: 100%;
       height: unset;
       margin: 0; } }
+  .delivery-terms__areas-map .delivery-areas__map {
+    height: 240px;
+    margin-bottom: 0; }
+    @media (min-width: 992px) {
+      .delivery-terms__areas-map .delivery-areas__map {
+        width: 400px;
+        height: 285px; } }
+    @media (min-width: 1200px) {
+      .delivery-terms__areas-map .delivery-areas__map {
+        width: 550px; } }
+    @media (min-width: 1350px) {
+      .delivery-terms__areas-map .delivery-areas__map {
+        width: 640px; } }
 
 .delivery-terms__areas-list {
   list-style: none;

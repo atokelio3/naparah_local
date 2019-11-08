@@ -99,6 +99,25 @@
       margin: 0;
     }
 
+    .delivery-areas__map {
+      height: 240px;
+      margin-bottom: 0;
+
+      @media (min-width: $screen-lg) {
+        width: 400px;
+        height: 285px;
+      }
+
+      @media (min-width: $screen-xl) {
+        width: 550px;
+      }
+
+      @media (min-width: $screen-xxl) {
+        width: 640px;
+      }
+
+    }
+
   }
 
   &__areas-list {
