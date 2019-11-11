@@ -28,6 +28,11 @@
     height: 220px;
     background-color: $color-background;
     margin-bottom: 45px;
+
+    .delivery-areas__map {
+      height: 220px;
+    }
+
   }
 
   &__address-group {

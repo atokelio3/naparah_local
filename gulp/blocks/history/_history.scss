@@ -96,8 +96,25 @@
   }
 
   &__content-item-value {
+    position: relative;
     font-size: $font-size;
     color: $color-secondary;
+  }
+
+  &__content-item-value--status-icon {
+    padding-left: 23px;
+
+    .history__content-item__icon-status {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 17px;
+      height: 17px;
+      background-repeat: no-repeat;
+      background-size: 17px;
+    }
+
   }
 
   &__dish-list-wrapper {

@@ -3192,6 +3192,8 @@ a {
     height: 220px;
     background-color: #eef3f3;
     margin-bottom: 45px; }
+    .checkout-delivery__map .delivery-areas__map {
+      height: 220px; }
   .checkout-delivery__address-group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3668,8 +3670,21 @@ a {
   color: #709594; }
 
 .history__content-item-value {
+  position: relative;
   font-size: 14px;
   color: #3d5b5a; }
+
+.history__content-item-value--status-icon {
+  padding-left: 23px; }
+  .history__content-item-value--status-icon .history__content-item__icon-status {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-size: 17px; }
 
 .history__dish-list-wrapper {
   overflow: hidden; }
