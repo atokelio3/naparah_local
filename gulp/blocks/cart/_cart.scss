@@ -38,6 +38,7 @@
 
     @media (min-width: $screen-md) {
       display: flex;
+      align-items: flex-start;
       flex-wrap: wrap;
     }
 
@@ -362,7 +363,26 @@
   }
 
   &__toppings {
-    padding: 15px 0;
+    margin-right: -40px;
+    padding: 20px 0 15px;
+
+    @media (min-width: $screen-md) {
+      width: 320px;
+      margin-right: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 440px;
+    }
+
+    @media (min-width: $screen-xl) {
+      width: 520px;
+    }
+
+    @media (min-width: $screen-xxl) {
+      width: 570px;
+    }
+
   }
 
 }

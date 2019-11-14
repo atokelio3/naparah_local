@@ -799,24 +799,58 @@ a {
   height: 12px; }
 
 .toppings__item {
-  max-width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   position: relative;
-  padding-left: 30px;
-  margin-bottom: 10px;
-  font-size: 0.8571rem;
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .toppings__item {
+      margin-bottom: 12px; } }
+
+.toppings__item-name {
+  max-width: 160px;
+  padding-right: 10px;
+  font-size: 0.7143rem;
   color: #709594; }
+  @media (min-width: 768px) {
+    .toppings__item-name {
+      max-width: 200px; } }
+  @media (min-width: 992px) {
+    .toppings__item-name {
+      max-width: 300px;
+      font-size: 1rem; } }
 
 .toppings__item:last-child {
   margin-bottom: 0; }
 
-.toppings__item:before {
-  display: block;
-  content: '+';
-  position: absolute;
-  top: -5px;
-  left: 2px;
-  font-size: 20px;
-  color: #a7c205; }
+.toppings__item-value {
+  margin-top: -4px;
+  white-space: nowrap; }
+
+.toppings__item-amount {
+  margin-right: 5px;
+  font-size: 0.7143rem;
+  color: #709594; }
+  @media (min-width: 992px) {
+    .toppings__item-amount {
+      font-size: 1rem; } }
+
+.toppings__item-price {
+  font-size: 0.7143rem;
+  font-weight: 700;
+  color: #3d5b5a; }
+  @media (min-width: 992px) {
+    .toppings__item-price {
+      font-size: 1rem; } }
+  .toppings__item-price span {
+    font-size: 0.7143rem; }
+    @media (min-width: 992px) {
+      .toppings__item-price span {
+        font-size: 0.8571rem; } }
 
 .link {
   font-size: 14px;
@@ -2789,6 +2823,9 @@ a {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
 
@@ -3064,7 +3101,21 @@ a {
       font-size: 1.286rem; } }
 
 .cart__toppings {
-  padding: 15px 0; }
+  margin-right: -40px;
+  padding: 20px 0 15px; }
+  @media (min-width: 768px) {
+    .cart__toppings {
+      width: 320px;
+      margin-right: 0; } }
+  @media (min-width: 992px) {
+    .cart__toppings {
+      width: 440px; } }
+  @media (min-width: 1200px) {
+    .cart__toppings {
+      width: 520px; } }
+  @media (min-width: 1350px) {
+    .cart__toppings {
+      width: 570px; } }
 
 .checkout__form {
   overflow: hidden;
