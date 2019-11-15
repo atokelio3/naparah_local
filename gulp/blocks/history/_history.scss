@@ -83,6 +83,11 @@
 
   &__content-item--big {
     width: 100%;
+
+    .history__content-item-value {
+      overflow: hidden;
+    }
+
   }
 
   &__content-item:last-child {
