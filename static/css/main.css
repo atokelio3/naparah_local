@@ -2360,6 +2360,12 @@ a {
     .catalog__category-filter {
       margin-bottom: 15px; } }
 
+.catalog__category-title {
+  margin-bottom: 20px;
+  font-size: 1.571rem;
+  font-weight: 700;
+  color: #709594; }
+
 .page-header {
   position: relative;
   z-index: 2; }
