@@ -2806,7 +2806,6 @@ a {
       margin-bottom: 35px; } }
 
 .cart__content-wrapper {
-  overflow-x: hidden;
   padding: 20px;
   background-color: #fff;
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -2815,12 +2814,11 @@ a {
     .cart__content-wrapper {
       padding: 35px; } }
 
-@media (min-width: 992px) {
-  .cart__content {
-    padding: 10px; } }
+.cart__content {
+  overflow-x: hidden; }
 
 .cart__items-list {
-  padding-bottom: 20px; }
+  padding: 10px 10px 20px; }
 
 .cart__item {
   position: relative; }
