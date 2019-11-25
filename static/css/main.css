@@ -2806,7 +2806,7 @@ a {
       margin-bottom: 35px; } }
 
 .cart__content-wrapper {
-  padding: 20px;
+  padding: 20px 15px;
   background-color: #fff;
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
