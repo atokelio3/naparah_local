@@ -10,6 +10,7 @@
   }
 
   &__content-wrapper {
+    overflow-x: hidden;
     padding: 20px;
     background-color: $color-white;
     box-shadow: $box-shadow;
@@ -21,7 +22,6 @@
   }
 
   &__content {
-    overflow-x: hidden;
 
     @media (min-width: $screen-lg) {
       padding: 10px;
